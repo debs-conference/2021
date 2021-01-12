@@ -42,26 +42,6 @@
 <script src="https://2021.debs.org/js/owl.carousel.min.js"></script>
 <script src="https://2021.debs.org/js/plugins.js"></script>
 <script src="https://2021.debs.org/js/venobox.min.js"></script>
-	
-<script>
-$(document).ready(function(){
-
-	$("a").on('click', function(event) {
-		if (this.hash !== "") {
-			var hash = this.hash;
-
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
-				window.location.hash = hash;
-			});
-
-			event.preventDefault();
-		} 
-	});
-});
-</script>
-
 
 <!-- Main Script -->
 
@@ -104,28 +84,6 @@ $(document).ready(function(){
 						<div class="row">
 							<div class="col-md-12">
 								<h1>Keynotes</h1>
-								<table class="table table-bordered table-hover text-center">
-									<thead class="bg-gray">
-										<tr>
-											<th class="text-center">Speakers</th>
-											<th class="text-center">Title</th>
-											<th class="text-center">More Info</th>
-										</tr>
-									</thead>
-									<tbody>
-										{% for keynote in site.data.keynotes %}
-										<tr>
-											<td style="width:30%"><b>{{keynote.firstname}} {{keynote.lastname}}</b><br>{{keynote.affiliation}}</td>
-											{% if keynote.title %}
-											<td style="width:60%">{{keynote.title}}</td>
-											{% else %}
-											<td style="width:60%">To be announced</td>
-											{% endif %}
-											<td style="width:10%"><a href=#{{keynote.lastname}}><img src=/img/infoImg.png width=50% padding-top=30px></a></td>
-										</tr>
-										{% endfor %}
-									</tbody>
-								</table>
 								<hr>
 							</div>
 							
