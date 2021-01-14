@@ -28,6 +28,15 @@
 					{% assign add_and = true %}
 					{% endif %}
 					{% endfor %}
+					{% for sponsor in site.data.sponsors.bronze_sponsors %}
+					{% if sponsor.sidebar %}
+					{% if add_and %}
+					<p class="col-md-12 text-center">and</p>
+					{% endif %}
+					<a href="{{sponsor.link}}" target = _blank><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-4 col-xs-offset-4" /></a>
+					{% assign add_and = true %}
+					{% endif %}
+					{% endfor %}
 				</div>
 
 			</div>

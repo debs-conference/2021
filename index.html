@@ -199,6 +199,9 @@ $(document).ready(function(){
 						{% for sponsor in site.data.sponsors.silver_sponsors %}
             <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
 						{% endfor %}
+						{% for sponsor in site.data.sponsors.bronze_sponsors %}
+            <div class="col-xs-9"><img src="{{sponsor.logo}}" class="col-md-12" alt="{{sponsor.name}}"></div>
+						{% endfor %}
             
           </div>
         </div>
