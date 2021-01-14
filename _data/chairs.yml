@@ -46,6 +46,9 @@ tutorials_workshop_chairs:
   - firstname: Martin
     lastname: Ugarte
     institution: Millennium Institute
+  - firstname: Tilmann
+    lastname: Rabl
+    institution: Hasso Plattner Institute
 
 doctoral_symposium_chairs:
   - firstname: Daniele

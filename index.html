@@ -55,7 +55,20 @@
 </script>
 
 
-
+<style>
+	.owl-centered .owl-wrapper {
+			display: table !important;
+	}
+	.owl-centered .owl-wrapper .owl-item {
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+	}
+	.owl-centered .owl-wrapper .owl-item div {
+			text-align: center;
+		}
+	}
+</style>
 
 </head>
 <body>
@@ -70,8 +83,8 @@
                 <div class="block text-center">
                     <h1 class="animated fadeInUp text-uppercase">DEBS 2021</h1>
                     <p class="animated fadeInUp">15TH ACM INTERNATIONAL CONFERENCE ON DISTRIBUTED AND EVENT-BASED SYSTEMS</p>
-                    <p1 class="animated fadeInUp">{{ site.data.dates.conference_dates }}</p1><br></br>
-                    <p2 class="animated fadeInUp">Milan, Italy</p2><br></br>
+                    <p1 class="animated fadeInUp">{{ site.data.dates.conference_dates }}</p1><br><br>
+                    <p2 class="animated fadeInUp">Milan, Italy</p2><br><br>
                     <!--
                     <a class="btn btn-main btn-solid-border" href="#scope" >Conference Information</a>
                     -->
@@ -149,61 +162,7 @@ $(document).ready(function(){
   </div>
 </section>
 
-
-	
-
-
-<!--
-
-<section id="testimonial">
-  <div class="container">
-    
-    <div class="row">
-      <div class="section-title text-center">
-        <h2></h2>
-        <p align="justify"></p>
-      </div>
-    </div>
-
-    <div class="row">
-      
-      
-      <div class="col-md-9">
-        <div class="section-title">
-          <h2>KEYNOTE SPEAKERS</h2>
-        </div>
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            
-            <div>
-                <p>KEYNOTE
-</p>
-                <div class="user">
-                  <a href="/keynote-speakers/"><img src="https://2021.debs.org/img/speakers/speaker1.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Tamer Özsu</span> <uni>University of Waterloo</uni> <tit><a href="/keynote-speakers/">Title: Streaming Graph Processing and Analytics</a></tit></p>
-                </div>
-            </div>
-            
-            <div>
-                <p>KEYNOTE
-</p>
-                <div class="user">
-                  <a href="/keynote-speakers/"><img src="https://2021.debs.org/img/speakers/speaker2.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Joelle Pineau</span> <uni>MILA / McGill / Facebook AI Research</uni> <tit><a href="/keynote-speakers/">Building Reproducible, Reusable, and Robust Machine Learning Software</a></tit></p>
-                </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
--->
-
-	<section id="feature" style="background-image: url('https://2021.debs.org/img/campus.png'),url('https://2021.debs.org/img/campus.png');">
+<section id="feature" style="background-image: url('https://2021.debs.org/img/campus.png'),url('https://2021.debs.org/img/campus.png');">
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-0">
@@ -220,77 +179,24 @@ $(document).ready(function(){
   </div>
 </div>
 </section>
-
-<!--
-
-	<section id="euranova" style="margin-top:150px;">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="block">
-    <div style="margin-bottom: 35px;">
-      <h2><a href = /pdf/tomacs-cfp.pdf target = _blank>Call for Papers: ACM Transactions on Modeling and Computer Simulation</a></h2>
-    </div>
-      <div class="col-md-9" style="width:100%">
-      <a href="https://workshop.euranova.eu/bigdata20.html" target = _blank><img src="img/Call%20for%20paper.png" alt="Call for paper" style="width:100%"></a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</section>
-
-
-	
-
-
 	
 <section id="clients-logo-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <div id="clients-logo" class="owl-carousel">
+          <div id="clients-logo" class="owl-carousel owl-centered">
+            <div class="col-md-9"><img src="/img/clients/clients-logo1.jpg" class="col-md-12" alt="Features"></div>
             
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo1.jpg" alt="Features"></a>
-            </div>
+            <div class="col-md-9"><img src="/img/clients/clients-logo2.jpg" class="col-md-12" alt="Features"></div>
             
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo2.jpg" alt="Features"></a>
-            </div>
+            <div class="col-md-9"><img src="/img/clients/clients-logo3.png" class="col-md-12" alt="Features"></div>
             
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo3.png" alt="Features"></a>
-            </div>
+            <div class="col-md-9"><img src="/img/clients/clients-logo4.png" class="col-md-12" alt="Features"></div>
             
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo4.png" alt="Features"></a>
-            </div>
+            <div class="col-md-9"><img src="/img/clients/clients-logo5.png" class="col-md-12" alt="Features"></div>
             
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo5.png" alt="Features"></a>
-            </div>
-            
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo1.jpg" alt="Features"></a>
-            </div>
-            
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo2.jpg" alt="Features"></a>
-            </div>
-            
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo3.png" alt="Features"></a>
-            </div>
-            
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo4.png" alt="Features"></a>
-            </div>
-            
-            <div class="clients-logo-img">
-              <a><img src="/img/clients/clients-logo5.png" alt="Features"></a>
-            </div>
+            <div class="col-md-9"><img src="/img/infront_logo_color.png" class="col-md-12" alt="Features"></div>
             
           </div>
         </div>
@@ -298,8 +204,6 @@ $(document).ready(function(){
     </div>
   </div>
 </section>
-
--->
 	
 <footer>
   <div class="container">
