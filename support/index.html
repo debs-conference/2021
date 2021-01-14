@@ -128,11 +128,13 @@
 						<div class="col-md-12">
 							<h1>Gold Sponsor</h1>
 							<div class="row">
+								{% for sponsor in site.data.sponsors.gold_sponsors %}
 								<div class="col-md-3">
 									<div style="margin-top: 30px; margin-left" class="row">
-										<a href="https://euranova.eu/" target = _blank style="margin-bottom: 100px;"><img src="/img/clients/clients-logo5.png" alt="Euranova" class="col-md-12"></a>
+										<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-md-12"></a>
 									</div>
 								</div>
+								{% endfor %}
 							</div>
 						</div>
 					</div>
@@ -140,11 +142,13 @@
 						<div class="col-md-12">
 							<h1>Silver Sponsor</h1>
 							<div class="row">
+								{% for sponsor in site.data.sponsors.silver_sponsors %}
 								<div class="col-md-3">
 									<div style="margin-top: 30px; margin-left" class="row">
-										<a href="https://www.infrontfinance.com/" target = _blank style="margin-bottom: 100px;"><img src="/img/infront_logo_color.png" alt="Infront" class="col-md-8 col-md-offset-2"></a>
+										<a href="{{sponsor.link}}" target = _blank style="margin-bottom: 100px;"><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-md-8 col-md-offset-2"></a>
 									</div>
 								</div>
+								{% endfor %}
 							</div>
 						</div>
           </div>

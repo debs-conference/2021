@@ -1,0 +1,10 @@
+gold_sponsors:
+  - name: Euranova
+    link: https://euranova.eu/
+    logo: /img/clients/clients-logo5.png
+    sidebar: true
+silver_sponsors:
+  - name: Infront
+    link: https://www.infrontfinance.com/
+    logo: /img/infront_logo_color.png
+    sidebar: true

@@ -9,9 +9,25 @@
 				
 				<div class="col-md-12">
 					<h3 class="font-weight-regular mb-20" style="display: inline-block;">Sponsored by</h3>
-					<a href="https://euranova.eu/" target = _blank><img src="/img/clients/clients-logo5.png" alt="Euranova" class="col-xs-12" /></a>
+					{% assign add_and = false %}
+					{% for sponsor in site.data.sponsors.gold_sponsors %}
+					{% if sponsor.sidebar %}
+					{% if add_and %}
 					<p class="col-md-12 text-center">and</p>
-					<a href="https://www.infrontfinance.com/" target = _blank><img src="/img/infront_logo_color.png" alt="Infront" class="col-xs-8 col-xs-offset-2" /></a>
+					{% endif %}
+					<a href="{{sponsor.link}}" target = _blank><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-12" /></a>
+					{% assign add_and = true %}
+					{% endif %}
+					{% endfor %}
+					{% for sponsor in site.data.sponsors.silver_sponsors %}
+					{% if sponsor.sidebar %}
+					{% if add_and %}
+					<p class="col-md-12 text-center">and</p>
+					{% endif %}
+					<a href="{{sponsor.link}}" target = _blank><img src="{{sponsor.logo}}" alt="{{sponsor.name}}" class="col-xs-8 col-xs-offset-2" /></a>
+					{% assign add_and = true %}
+					{% endif %}
+					{% endfor %}
 				</div>
 
 			</div>
