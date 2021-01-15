@@ -71,7 +71,6 @@
             <div class="col-md-12">
                 <div class="block">
                     <h1>CALL FOR TUTORIALS</h1>
-                    <p>To Be Announced</p>
                 </div>
             </div>
         </div>
@@ -80,7 +79,7 @@
 
 
 
-<!-- <section id = "call-for-tutorials">
+<section id = "call-for-tutorials">
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-sm-12">
@@ -88,13 +87,13 @@
           <div>
             <h1>Objective</h1>
             
-            <p align = "justify">Over the past decade, the ACM International Conference on Distributed and Event‐based Systems (DEBS) has become the premier venue for academia and industry to discuss cutting-edge research of event-based computing related to Big Data, AI/ML, IoT and Distributed Systems. The objectives of the ACM International Conference on Distributed and Event‐Based Systems (DEBS) are to provide a forum dedicated to the dissemination of original research, the discussion of practical insights, and the reporting of experiences relevant to distributed systems and event‐based computing. The conference aims at providing a forum for academia and industry to exchange ideas.</P>
+            <p align = "justify">Over the past decade, the ACM International Conference on Distributed and Event‐based Systems (DEBS) has become the premier venue for academia and industry to discuss cutting-edge research of event-based computing related to Big Data, AI/ML, IoT and Distributed Systems. The objectives of the ACM International Conference on Distributed and Event‐Based Systems (DEBS) are to provide a forum dedicated to the dissemination of original research, the discussion of practical insights, and the reporting of experiences relevant to distributed systems and event‐based computing. The conference aims at providing a forum for academia and industry to exchange ideas.</p>
             
-            <p align = "justify">DEBS 2021 will host a one-day, multi-track tutorial program to provide independent instruction on topics related to distributed and event-based computing, both fitting for the research audience and to an industrial audience. We solicit both long (2 sessions) and short (1 session) tutorials. A tutorial may cover a wide scope of topics ranging from practical techniques and guidelines over relevant standards through to theoretical work. Please note that no marketing or product-specific tutorials will be accepted. Tutorial levels may be introductory, intermediate, or advanced. Topics of broad interest are preferred.</P>
+            <p align = "justify">DEBS 2021 will host a one-day, multi-track tutorial program to provide independent instruction on topics related to distributed and event-based computing, both fitting for the research audience and to an industrial audience. We solicit both long (2 sessions) and short (1 session) tutorials. A tutorial may cover a wide scope of topics ranging from practical techniques and guidelines over relevant standards through to theoretical work. Please note that no marketing or product-specific tutorials will be accepted. Tutorial levels may be introductory, intermediate, or advanced. Topics of broad interest are preferred.</p>
             
           </div>
           <div>
-            <p align = "justify">A tutorial proposal of 1–3 pages should include:</P>
+            <p align = "justify">A tutorial proposal of 1–3 pages should include:</p>
                 
                 <li>The proposed title</li>
                 
@@ -106,24 +105,24 @@
                 
                 <li>The assumed background of attendees</li>
                 
-                <li>The name, affiliation, email and brief biography of the speaker(s)</li>
+                <li>The name, affiliation, email and brief biography of the speaker(s).</li>
                 
                 <li>Any prior experience for the speaker(s) giving this or related tutorial</li>
                 
           </div>
           <div>
             <h1>Accepted Proposals</h1>
-            <p align = "justify">Proposers of accepted tutorials are given the opportunity to submit a tutorial paper. The content of a tutorial paper must be on the material covered by the tutorial and must not exceed 4 pages. Submitted tutorial papers will be reviewed prior to publication, and may be rejected for publication if either the technical quality of the paper is insufficient or the content of the paper does not match the content of the tutorial. Note that the rejection of a tutorial paper, does not imply a rejection of the tutorial itself. Tutorial papers will be published in the conference proceedings as part of the ACM International Proceedings Series and will be disseminated through the ACM Digital Library.</P>
+            <p align = "justify">Proposers of accepted tutorials are given the opportunity to submit a tutorial paper. The content of a tutorial paper must be on the material covered by the tutorial and must not exceed 4 pages. Submitted tutorial papers will be reviewed prior to publication, and may be rejected for publication if either the technical quality of the paper is insufficient or the content of the paper does not match the content of the tutorial. Note that the rejection of a tutorial paper, does not imply a rejection of the tutorial itself. Tutorial papers will be published in the conference proceedings as part of the ACM International Proceedings Series and will be disseminated through the ACM Digital Library.</p>
               <div>
                 <h1>Important Dates</h1>
                 
-                <li>Tutorial Proposal submission <b><del>March 3rd</del> March 25th, 2021</b></li>
-                
-                <li>Author notification for Tutorials <b>March 17th, 2021</b></li>
-                
-                <li>Camera ready deadline <b><del>May 28th</del> June 4th, 2021</b></li>
-                
-                <li>Conference <b>July 13 &ndash; 17th, 2021</b></li>
+								<li>Tutorial Proposal submission <b>{% if site.data.dates.tutorial_proposal_submission.old!="" %}<del>{{site.data.dates.tutorial_proposal_submission.old}}</del> {% endif %}{% if site.data.dates.tutorial_proposal_submission.current %}{{site.data.dates.tutorial_proposal_submission.current}}{% else %}tba{% endif %}</b></li>
+            
+								<li>Author notification for Tutorials <b>{% if site.data.dates.tutorial_proposal_author_notification.old!="" %}<del>{{site.data.dates.tutorial_proposal_author_notification.old}}</del> {% endif %}{% if site.data.dates.tutorial_proposal_author_notification.current %}{{site.data.dates.tutorial_proposal_author_notification.current}}{% else %}tba{% endif %}</b></li>
+
+								<li>Camera ready deadline <b>{% if site.data.dates.camera_ready.old!="" %}<del>{{site.data.dates.camera_ready.old}}</del> {% endif %}{% if site.data.dates.camera_ready.current %}{{site.data.dates.camera_ready.current}}{% else %}tba{% endif %}</b></li>
+
+								<li>Conference <b>{{site.data.dates.conference_dates_calls}}</b></li>
                 
               </div>
           </div>
@@ -131,101 +130,23 @@
             <h1>Submissions</h1>
               <div style="margin-bottom: 100px;">
                 
-                <p align="justify">Submissions must be in the ACM format for conference proceedings. Only PDF documents will be accepted.
+								<p align="justify">Submissions must be in the ACM format for conference proceedings. Only PDF documents will be accepted.</p>
                 
-                <p align="justify">Authors should make use of the <a href="https://www.acm.org/special-interest-groups">ACM SIGS Proceedings templates</a>.
+                <p align="justify">Authors should make use of the <a href="https://www.acm.org/special-interest-groups">ACM SIGS Proceedings templates</a>.</p>.
                 
-                <p align="justify">Please email your submissions to the Tutorial Co-Chairs at <b>tilmann.rabl@hpi.de</b> and <b>querzoni@dis.uniroma1.it</b> with the subject heading <b>“DEBS 2021 Tutorial Submission”</b>.
+								<p align="justify">Please email your submissions to the Tutorial Co-Chairs at <a href="mailto:hinze@waikato.ac.nz">hinze@waikato.ac.nz</a>, <a href="mailto:martin.ugarte@imfd.cl">martin.ugarte@imfd.cl</a>, <a href="mailto:tilmann.rabl@hpi.de">tilmann.rabl@hpi.de</a> with the subject heading &ldquo;<b>DEBS 2021 Tutorial Submission</b>&rdquo;.</p>
                 
-                <p align="justify">Proposers of accepted tutorials will later be contacted with a link to submit their tutorial papers.
+								<p align="justify">Proposers of accepted tutorials will later be contacted with a link to submit their tutorial papers.</p>
                 
               </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
-  
-
-
-  
-  
-  <h3 class="font-weight-regular mb-20">Important Dates</h3>
-  <div class="table-responsive">
-    <table class="table table-bordered table-hover text-center">
-      <thead class="bg-gray">
-        <tr>
-          <th class="text-center">Events</th>
-          <th class="text-center">Dates</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        <tr>
-          <td>Tutorial Proposal Submission</td>
-          <td><del>March 3rd</del> March 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Abstract Submission for Research Track</td>
-          <td><del>March 13th</del> March 27th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Research and Industry Paper Submission</td>
-          <td><del>March 20th</del> April 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Grand Challenge Solution Submission</td>
-          <td><del>April 7th</del> April 24th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Industry Track</td>
-          <td>May 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Research Track</td>
-          <td><del>May 3rd</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Doctoral Symposium Submission</td>
-          <td><del>May 10th</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Poster &amp; Demo Submission</td>
-          <td><del>May 18th</del> May 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Camera Ready for All Tracks</td>
-          <td><del>May 28th</del> June 4th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Conference</td>
-          <td>July 13th &ndash; 17th, 2021</td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-  
-  
-  <div class="twitter">
-    <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  
-</div>
+      {% include side.html %}
 
     </div>
   </div>
 </section>
- -->
 	
 
 	
