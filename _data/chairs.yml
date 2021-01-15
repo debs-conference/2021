@@ -14,6 +14,146 @@ pc_chairs:
     lastname: Artikis
     institution: University of Piraeus, NCSR Demokritos
 
+pc_members:
+  - firstname: Paris
+    lastname: Carbone
+    institution: KTH Royal Institute of Technology
+  - firstname: Martin
+    lastname: Ugarte
+    institution: Millennium Institute for Foundational Research on Data
+  - firstname: Holger
+    lastname: Ziekow
+    institution: Hochschule Furtwangen / Furtwangen University
+  - firstname: Bernhard
+    lastname: Seeger
+    institution: University of Marburg
+  - firstname: Vasiliki
+    lastname: Kalavri
+    institution: ETH Zurich and Boston University
+  - firstname: Ruben
+    lastname: Mayer
+    institution: Technical University of Munich
+  - firstname: Asterios
+    lastname: Katsifodimos
+    institution: Delft University of Technology
+  - firstname: Miguel
+    lastname: Correia
+    institution: Universidade de Lisboa
+  - firstname: Opher
+    lastname: Etzion
+    institution: Yezreel Valley College
+  - firstname: Peter M.
+    lastname: Fischer
+    institution: Universität Augsburg, Institut für Informatik
+  - firstname: Pinar
+    lastname: Karagoz
+    institution: Middle East Technical University (METU)
+  - firstname: Zsolt
+    lastname: Istvan
+    institution: IT University Copenhagen
+  - firstname: Gabriele
+    lastname: Mencagli
+    institution: University of Pisa
+  - firstname: Aniruddha
+    lastname: Gokhale
+    institution: Vanderbilt University
+  - firstname: Shimin
+    lastname: Chen
+    institution: ICT CAS
+  - firstname: Han
+    lastname: van der Aa
+    institution: University of Mannheim
+  - firstname: Lei
+    lastname: Cao
+    institution: Massachusetts Institute of Technology
+  - firstname: David
+    lastname: Eyers
+    institution: University of Otago
+  - firstname: Walid
+    lastname: Aref
+    institution: Purdue University
+  - firstname: Danh
+    lastname: Le Phuoc
+    institution: TU Berlin
+  - firstname: Jelle
+    lastname: Hellings
+    institution: University of California, Davis
+  - firstname: Boris
+    lastname: Koldehofe
+    institution: TU Darmstadt
+  - firstname: Matthias
+    lastname: Weidlich
+    institution: Humboldt-Universität zu Berlin
+  - firstname: Qiong
+    lastname: Luo
+    institution: The Hong Kong University of Science and Technology
+  - firstname: Gianpaolo
+    lastname: Cugola
+    institution: Politecnico di Milano
+  - firstname: Akrivi
+    lastname: Vlachou
+    institution: University of the Aegean
+  - firstname: Leonardo
+    lastname: Querzoni
+    institution: Sapienza University of Rome
+  - firstname: Luis
+    lastname: Rodrigues
+    institution: Universidade de Lisboa
+  - firstname: Holger
+    lastname: Pirk
+    institution: MIT
+  - firstname: Avigdor
+    lastname: Gal
+    institution: Technion
+  - firstname: Kurt
+    lastname: Rothermel
+    institution: University of Stuttgart
+  - firstname: Eiko
+    lastname: Yoneki
+    institution: University of Cambridge
+  - firstname: Sylvain
+    lastname: Hallé
+    institution: Université du Québec à Chicoutimi
+  - firstname: Mohammad
+    lastname: Sadoghi
+    institution: University of California, Davis
+  - firstname: Kaiwen
+    lastname: Zhang
+    institution: École de technologie supérieure de Montréal
+  - firstname: Roman
+    lastname: Vitenberg
+    institution: University of Oslo
+  - firstname: Nalini
+    lastname: Venkatasubramanian
+    institution: UCI/ICS
+  - firstname: Olga
+    lastname: Poppe
+    institution: Microsoft
+  - firstname: Arash
+    lastname: Termehchy
+    institution: Oregon State University
+  - firstname: Maarten
+    lastname: van Steen
+    institution: University of Twente
+  - firstname: Vincenzo
+    lastname: Gulisano
+    institution: Chalmers University of Technology
+  - firstname: Guido
+    lastname: Salvaneschi
+    institution: Universität St.Gallen
+  - firstname: Stijn
+    lastname: Vansummeren
+    institution: Hasselt University
+  - firstname: Martin
+    lastname: Hirzel
+    institution: IBM
+  - firstname: Fredrik
+    lastname: Heintz
+    institution: Linköping University
+  - firstname: Khuzaima
+    lastname: Daudjee
+    institution: University of Waterloo
+
 industry_chairs:
   - firstname: Sabri
     lastname: Skhiri
