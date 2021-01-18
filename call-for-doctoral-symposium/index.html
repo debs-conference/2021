@@ -72,7 +72,6 @@
             <div class="col-md-12">
                 <div class="block">
                     <h1>CALL FOR DOCTORAL SYMPOSIUM</h1>
-                    <p>To Be Announced</p>
                 </div>
             </div>
         </div>
@@ -81,7 +80,7 @@
 
 
 
-<!-- <section id = "call-for-doctoral-symposium">
+<section id = "call-for-doctoral-symposium">
   <div class="container">
     <div class="row">
       <div class="col-md-9 col-sm-12">
@@ -93,25 +92,25 @@
             
               <p align="justify">The symposium welcomes submissions by Ph.D. candidates working on the topics of DEBS 2021. Accepted submissions will lead to a presentation during the doctoral symposium, and may additionally provide an opportunity to present a poster at the main conference.</p>
             
-              <p align="justify">Short papers will be published in a Doctoral Symposium section of the DEBS proceedings. The choice of short paper is to ensure that future publication of the work in conferences/journals is not precluded, while still providing an opportunity to receive citations. Accepted submissions will be made available electronically to all participants.</p>
+              <p align="justify">Short papers will be published in a Doctoral Symposium section of the DEBS proceedings. The choice of short papers is to ensure that future publications in conferences/journals are not precluded, while still providing an opportunity to receive citations. Accepted submissions will be made available electronically to all participants.</p>
             
           </div>
           <div>
             
             <h1>Eligibility</h1>
-            <p align="justify">The forum is open to all Ph.D. students. Ph.D. students at the beginning of their research journey are particularly welcome when they have a well-defined problem statement and some ideas about the solution that they want to discuss. Ph.D. students in a more advanced stage of their research should still have a sufficient time remaining before completing their dissertation so as to be able to benefit from feedback provided from participation in the DEBS Doctoral Symposium.</p>
+            <p align="justify">The forum is open to all Ph.D. students. Ph.D. students at the beginning of their research journey are particularly welcome when they have a well-defined problem statement and some ideas about the solution that they want to discuss. Ph.D. students in a more advanced stage of their research should still have sufficient time remaining before completing their dissertation to be able to benefit from feedback provided from participation in the DEBS Doctoral Symposium.</p>
             
           </div>
           <div>
             <h1>Important Dates</h1>
             
-            <li>Doctoral symposium paper submission <b><del>May 10th</del> May 18th, 2021</b></li>
+            <li>Doctoral symposium paper submission <b>{% if site.data.dates.doctoral_symposium_submission.old!="" %}<del>{{site.data.dates.doctoral_symposium_submission.old}}</del> {% endif %}{% if site.data.dates.doctoral_symposium_submission.current %}{{site.data.dates.doctoral_symposium_submission.current}}{% else %}tba{% endif %}</b></li>
             
-            <li>Notification of acceptance <b><del>May 20th</del> May 25th, 2021</b></li>
+            <li>Notification of acceptance <b>{% if site.data.dates.doctoral_symposium_author_notification.old!="" %}<del>{{site.data.dates.doctoral_symposium_author_notification.old}}</del> {% endif %}{% if site.data.dates.doctoral_symposium_author_notification.current %}{{site.data.dates.doctoral_symposium_author_notification.current}}{% else %}tba{% endif %}</b></li>
             
-            <li>Camera ready deadline <b><del>May 28th</del> June 4th, 2021</b></li>
+            <li>Camera ready deadline <b>{% if site.data.dates.camera_ready.old!="" %}<del>{{site.data.dates.camera_ready.old}}</del> {% endif %}{% if site.data.dates.camera_ready.current %}{{site.data.dates.camera_ready.current}}{% else %}tba{% endif %}</b></li>
             
-            <li>Conference <b>July 13 &ndash; 17th, 2021</b></li>
+            <li>Conference <b>{{site.data.dates.conference_dates_calls}}</b></li>
             
           </div>
           <div>
@@ -119,135 +118,40 @@
             <h1>Submission Guidelines</h1>
             <p align="justify">Submissions should be written based on the following structure, which focuses on the key methodological components required for a sound research synthesis:</p>
 
-            <div class="table-responsive">
-              <table class="table table-bordered table-hover">
-                <tbody>
-                  
-                  <tr>
-                    <td>Problem</td>
-                    <td>Describe the core problem of the Ph.D. and motivate its relevance.</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>State of the art</td>
-                    <td>Describe relevant related work.</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>Proposed approach</td>
-                    <td>Present the approach taken and motivate how this is novel with respect to existing works; sketch the methodology.</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>Preliminary results</td>
-                    <td>Describe the current status of the work and any results that have been reached so far.</td>
-                  </tr>
-                  
-                  <tr>
-                    <td>Conclusions and future work</td>
-                    <td>Conclude and specify the major items of future work.</td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
+						<div style="margin-bottom: 10px; font-size: 15px">
+							<li>Problem: What is the core problem you are studying during your PhD? Why is it relevant?</li>
+							<li>Research setting: What are your research questions? Which hypotheses (Hypotheses must be falsifiable!) are you going to investigate? Which assumptions are you taking?</li>
+							<li>State of the art: Who worked on your problem (or a similar one) in the past? What are the main differences with regards to your research?</li>
+							<li>Research approach: What is your approach to investigate your research questions? How and why is it novel with respect to the existing state of the art? Which methodologies are you adopting?</li>
+							<li>Evaluation plan: How are you going to evaluate your research? Which datasets will you use? Are you using any established benchmark? Have you reached any result so far?</li>
+							<li>Conclusions and reflections: What is the current status of your research? What are the main challenges you are facing? Why do you think your research will be successful?</li>
+						</div>
+            
             <p align="justify">Submissions must be no longer than 4 pages and must adhere to the two column ACM conference proceeding style. Templates and examples in LaTeX and various versions of Microsoft Word are available for download from the ACM Master Article Template web pages at <a href="https://www.acm.org/publications/proceedings-template">https://www.acm.org/publications/proceedings-template</a>. Papers must be in PDF (Adobe’s Portable Document Format) format and must be submitted electronically.</p>
             <p align="justify">Submissions must be single-author, on the topic of the doctoral work. The name of the supervisor must be clearly marked (&ldquo;supervised by …&rdquo;) on the paper, under the author’s name.</p>
             
           </div>
-          <div style="margin-bottom: 90px">
+					
+					<div style="margin-bottom: 90px">
             <h1>Submission</h1>
-            
-              <p align="justify">Please submit proposals via HotCRP at <a href="https://debs2021-doctoral-symposium.hotcrp.com/">https://debs2021-doctoral-symposium.hotcrp.com/</a>.</p>
+						<p align="justify">
+							To be announced.
+						</p>
+              <!--
+          		<p align="justify">Please submit proposals via HotCRP at <a href="https://debs2021-doctoral-symposium.hotcrp.com/">https://debs2021-doctoral-symposium.hotcrp.com/</a>.</p>
             
               <p align="justify">Inquiries can be sent to <a href="mailto:debs2021-doctoral-symposium@cs.otago.ac.nz">debs2021-doctoral-symposium@cs.otago.ac.nz</a>.</p>
+							-->
             
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12">
-  
-
-
-  
-  
-  <h3 class="font-weight-regular mb-20">Important Dates</h3>
-  <div class="table-responsive">
-    <table class="table table-bordered table-hover text-center">
-      <thead class="bg-gray">
-        <tr>
-          <th class="text-center">Events</th>
-          <th class="text-center">Dates</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        <tr>
-          <td>Tutorial Proposal Submission</td>
-          <td><del>March 3rd</del> March 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Abstract Submission for Research Track</td>
-          <td><del>March 13th</del> March 27th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Research and Industry Paper Submission</td>
-          <td><del>March 20th</del> April 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Grand Challenge Solution Submission</td>
-          <td><del>April 7th</del> April 24th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Industry Track</td>
-          <td>May 3rd, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Author Notification Research Track</td>
-          <td><del>May 3rd</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Doctoral Symposium Submission</td>
-          <td><del>May 10th</del> May 18th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Poster &amp; Demo Submission</td>
-          <td><del>May 18th</del> May 25th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Camera Ready for All Tracks</td>
-          <td><del>May 28th</del> June 4th, 2021</td>
-        </tr>
-        
-        <tr>
-          <td>Conference</td>
-          <td>July 13th &ndash; 17th, 2021</td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-  
-  
-  <div class="twitter">
-    <a class="twitter-timeline" href="https://twitter.com/ACM_DEBS?lang=en" data-height="390" data-chrome="nofooter" data-link-color="#55acee" data-border-color="#DCDCDC">A Twitter List by TwitterDev</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  
-</div>
+      {% include side.html %}
 
     </div>
   </div>
 </section>
- -->
+
 	
 
 	
