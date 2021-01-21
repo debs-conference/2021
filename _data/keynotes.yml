@@ -1,3 +1,16 @@
+- firstname: Carlo
+  lastname: Curino
+  title: 
+  affiliation: Microsoft Gray Systems Lab
+  image: /img/speakers/speaker3.jpg
+  abstract: 
+  biography: |-
+    Carlo Curino is the lead of Gray Systems Lab (GSL). 
+    Before this Carlo was a Principal Scientist in Cloud and Information Services Lab (CISL), working on large-scale distributed systems, with a focus on scheduling for BigData clusters; this line of research was co-developed with several team members and open-sourced as part of Apache Hadoop/YARN.  Intrinsically, this research work enables us to operate the largest YARN clusters in the world (deployed on 250k + servers within Microsoft).<br/>
+    Prior to joining Microsoft was a Research Scientist at Yahoo!; primarily working entity deduplication and scale and mobile+cloud platforms.  Carlo spent two years as a Post Doc Associate at CSAIL MIT working with Prof. Samuel Madden and Prof. Hari Balakrishnan. At MIT he also served as the primary lecturer for the course on databases CS630, taught in collaboration with Mike Stonebraker.<br/>
+    Carlo received a Bachelor in Computer Science at Politecnico di Milano. He participated in a joint project between University of Illinois at Chicago (UIC) and Politecnico di Milano, obtaining a Master Degree in Computer Science at UIC and the Laurea Specialistica (cum laude) in Politecnico di Milano. During the PhD at Politecnico di Milano, Carlo spent two years as a visiting researcher at UCLA, working with Prof. Carlo Zaniolo (UCLA) and Prof Alin Deutsch (UCSD).<br/>
+    Research interests: ML-for-Systems and Systems-for-ML, large scale distributed systems, performance tuning, and scheduling.<br/>
+    Previous research work: mobile+cloud platforms, entity dedup at scale, relational databases and cloud computing, workload management and performance analysis, schema evolution, and temporal databases.
 - firstname: Yanlei
   lastname: Diao
   title: 
@@ -15,16 +28,3 @@
   abstract: 
   biography: |-
     Martin Kleppmann is a research fellow at the University of Cambridge, and author of “Designing Data-Intensive Applications” (O’Reilly Media, 2017). He works on distributed algorithms, data systems, collaboration software, and security protocols. Previously he was a software engineer and entrepreneur at Internet companies including LinkedIn and Rapportive, where he worked on large-scale data infrastructure and stream processing.
-- firstname: Carlo
-  lastname: Curino
-  title: 
-  affiliation: Principal Research Scientist Lead, Microsoft
-  image: /img/speakers/speaker3.jpg
-  abstract: 
-  biography: |-
-    Carlo Curino is the lead of Gray Systems Lab (GSL). 
-    Before this Carlo was a Principal Scientist in Cloud and Information Services Lab (CISL), working on large-scale distributed systems, with a focus on scheduling for BigData clusters; this line of research was co-developed with several team members and open-sourced as part of Apache Hadoop/YARN.  Intrinsically, this research work enables us to operate the largest YARN clusters in the world (deployed on 250k + servers within Microsoft).<br/>
-    Prior to joining Microsoft was a Research Scientist at Yahoo!; primarily working entity deduplication and scale and mobile+cloud platforms.  Carlo spent two years as a Post Doc Associate at CSAIL MIT working with Prof. Samuel Madden and Prof. Hari Balakrishnan. At MIT he also served as the primary lecturer for the course on databases CS630, taught in collaboration with Mike Stonebraker.<br/>
-    Carlo received a Bachelor in Computer Science at Politecnico di Milano. He participated in a joint project between University of Illinois at Chicago (UIC) and Politecnico di Milano, obtaining a Master Degree in Computer Science at UIC and the Laurea Specialistica (cum laude) in Politecnico di Milano. During the PhD at Politecnico di Milano, Carlo spent two years as a visiting researcher at UCLA, working with Prof. Carlo Zaniolo (UCLA) and Prof Alin Deutsch (UCSD).<br/>
-    Research interests: ML-for-Systems and Systems-for-ML, large scale distributed systems, performance tuning, and scheduling.<br/>
-    Previous research work: mobile+cloud platforms, entity dedup at scale, relational databases and cloud computing, workload management and performance analysis, schema evolution, and temporal databases.
