@@ -184,7 +184,25 @@ pc_members_research:
     lastname: Ziekow
     institution: Hochschule Furtwangen / Furtwangen University
 
-
+pc_members_industry:
+  - firstname: Bogdan
+    lastname: Ghit
+    institution: Databricks
+  - firstname: Zbigniew
+    lastname: Jerzak
+    institution: Zalando SE
+  - firstname: Romain
+    lastname: Rouvoy
+    institution: Univ. Lille / Inria / IUF
+  - firstname: Julius
+    lastname: Rückert
+    institution: ABB Corporate Research
+  - firstname: Timos
+    lastname: Sellis
+    institution: Facebook
+  - firstname: Guozhang
+    lastname: Wang
+    institution: Confluent
 industry_chairs:
   - firstname: Sabri
     lastname: Skhiri

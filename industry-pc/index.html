@@ -91,29 +91,12 @@
             {% for chair in site.data.chairs.industry_chairs %}
               <li align = "justify">{{ chair.firstname }} {{ chair.lastname }}, {{ chair.institution }}</li>
             {% endfor %}
-
+            
             <h1>Members</h1>
             
-            
-            To Be Announced
-
-            <!-- <li>Guillaume	Baudart, IBM 
-            Research</li>
-            
-            <li>Wolfgang	De Meuter, Vrije Universiteit Brussel, Belgium</li>
-            
-            <li>Colin	Dixon, Facebook</li>
-            
-            <li>Bogdan	Ghit, Databricks</li>
-            
-            <li>Phuong	Nguyen, eBay</li>
-            
-            <li>Romain	Rouvoy, Université de Lille, France</li>
-            
-            <li>Julius	Rückert, ABB Corporate Research, Germany</li>
-            
-            <li>Scott	Schneider, IBM Research</li>
-             -->
+						{% for member in site.data.chairs.pc_members_industry %}
+            <li>{{member.firstname}} {{member.lastname}}, {{member.institution}}</li>
+						{% endfor %}
           </div>
         </div>
       </div>
