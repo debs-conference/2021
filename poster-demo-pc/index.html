@@ -94,33 +94,9 @@
             
             <h1>Members</h1>
             
-            To Be Announced
-            <!-- <li>Alexander Artikis, University of Piraeus, Greece</li>
-            
-            <li>Lars Baumgärtner, Technical University of Darmstadt, Germany</li>
-            
-            <li>Zied Bouida, Carleton University</li>
-            
-            <li>Dimitris	Dechouniotis, NETMODE Laboratory</li>
-            
-            <li>Christoph	Doblander, TU Munich, Germany</li>
-            
-            <li>Paul	Gardner-Stephen, Flinders University, Australia</li>
-            
-            <li>Julien	Gascon-Samson, École de technologie supérieure, Canada</li>
-            
-            <li>Vincenzo	Gulisano, Chalmers University of Technology, Sweden</li>
-            
-            <li>Leander	Jehl, University of Stavanger, Norway</li>
-            
-            <li>Hein	Meling, University of Stavanger, Norway</li>
-            
-            <li>Yusuf	Sarwar, University of California, Irvine, USA</li>
-            
-            <li>Christos	Tryfonopoulos, University of the Peloponnese, Tripolis, Greece</li>
-            
-            <li>Young Yoon, Hongik University, Korea</li>
-             -->
+            {% for member in site.data.chairs.pc_members_poster_demo %}
+            <li>{{member.firstname}} {{member.lastname}}, {{member.institution}}</li>
+						{% endfor %}
           </div>
         </div>
       </div>

@@ -247,6 +247,38 @@ doctoral_symposium_chairs:
     lastname: Eyers
     institution: University of Otago
 
+pc_members_poster_demo:
+  - firstname: Fabiana
+    lastname: Fournier
+    institution: IBM Haifa Research Lab
+  - firstname: Ekaterini
+    lastname: Ioannou
+    institution: University of Tilburg
+  - firstname: Zbigniew
+    lastname: Jerzak
+    institution: Zalando SE
+  - firstname: Vana
+    lastname: Kalogeraki
+    institution: Athens University of Economics and Business
+  - firstname: Yannis
+    lastname: Kotidis
+    institution: Athens University of Economics and Business
+  - firstname: Danh
+    lastname: Le Phuoc
+    institution: TU Berlin
+  - firstname: Ruben
+    lastname: Mayer
+    institution: Technical University of Munich
+  - firstname: Matteo
+    lastname: Migliavacca
+    institution: University of Kent
+  - firstname: Michael
+    lastname: Shekelyan
+    institution: King's College London
+  - firstname: Alkis
+    lastname: Simitsis
+    institution: Athena RC
+
 poster_demo_chairs:
   - firstname: Leonardo
     lastname: Querzoni
