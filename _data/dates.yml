@@ -29,16 +29,18 @@ grand_challenge_author_notification:
 
 doctoral_symposium_submission:
     current: May 10th, 2021
+    old: April 26th, 2021
 doctoral_symposium_author_notification:
     current: May 24th, 2021
+    old: May 3rd, 2021
 
 poster_demo_submission:
-    current: April 26th, 2021
-poster_demo_author_notification:
     current: May 10th, 2021
+    old: April 26th, 2021
+poster_demo_author_notification:
+    current: May 24th, 2021
+    old: May 10th, 2021
 
 camera_ready:
-    current: May 14th, 2021
-
-doctoal_symposium_camera_ready:
     current: May 28th, 2021
+    old: May 14th, 2021
