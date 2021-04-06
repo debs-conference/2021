@@ -24,10 +24,15 @@ industry_author_notification:
     old: April 19th, 2021
     current: May 3rd, 2021
 
+grand_challenge_upload_code:
+    old: April 5th, 2021
+    current: April 12th, 2021
 grand_challenge_submission:
-    current: April 19th, 2021
+    old: April 19th, 2021
+    current: April 26th, 2021
 grand_challenge_author_notification:
-    current: May 3rd, 2021
+    old: May 3rd, 2021
+    current: May 10th, 2021
 
 doctoral_symposium_submission:
     current: May 10th, 2021
