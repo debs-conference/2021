@@ -185,6 +185,9 @@ pc_members_research:
     institution: Hochschule Furtwangen / Furtwangen University
 
 pc_members_industry:
+  - firstname: Guillaume
+    lastname: Baudart
+    institution: Inria / PARKAS / École normale supérieure
   - firstname: Bogdan
     lastname: Ghit
     institution: Databricks
@@ -203,6 +206,7 @@ pc_members_industry:
   - firstname: Guozhang
     lastname: Wang
     institution: Confluent
+
 industry_chairs:
   - firstname: Sabri
     lastname: Skhiri
