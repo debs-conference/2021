@@ -187,7 +187,7 @@ pc_members_research:
 pc_members_industry:
   - firstname: Guillaume
     lastname: Baudart
-    institution: Inria / PARKAS / École normale supérieure
+    institution: Inria / École normale supérieure
   - firstname: Bogdan
     lastname: Ghit
     institution: Databricks
