@@ -1,9 +1,10 @@
 - firstname: Carlo
   lastname: Curino
-  title: 
+  title: "Workload-Driven Systems Optimization: things are getting real!"
   affiliation: Microsoft Gray Systems Lab
   image: /img/speakers/speaker3.jpg
-  abstract: 
+  abstract: |-
+    In this talk, I will describe how workload-driven system optimization has quickly evolved from a researcher’s dream into a production reality. In particular, I will provide a high-level overview of a large collection of efforts that build upon careful telemetry collection and analysis to tune and optimize large-scale distributed systems in production at Microsoft.  While the opportunities are staggering (e.g., improving system efficiencies to the tune of 10s of millions of dollars per year), the challenges are equally daunting. I will discuss some of the ways we handle the challenges at MS and point at open problems along the way.
   biography: |-
     Carlo Curino is the lead of Gray Systems Lab (GSL). 
     Before this Carlo was a Principal Scientist in Cloud and Information Services Lab (CISL), working on large-scale distributed systems, with a focus on scheduling for BigData clusters; this line of research was co-developed with several team members and open-sourced as part of Apache Hadoop/YARN.  Intrinsically, this research work enables us to operate the largest YARN clusters in the world (deployed on 250k + servers within Microsoft).<br/>
@@ -27,7 +28,7 @@
   affiliation: University of Cambridge
   image: /img/speakers/speaker2.jpg
   abstract: |-
-    What do Google Docs and stream processing have in common? Both are centered around the idea of streams of events. In the case of Google Docs and other collaboration software, each event describes a change that a user has made to a document. Each user's local device has a copy of the shared document, and processing the stream of changes means updating this local copy so that it is consistent with all of the other users' copies of the document.<br/><br/>
+    What do Google Docs and stream processing have in common? Both are centered around the idea of streams of events. In the case of Google Docs and other collaboration software, each event describes a change that a user has made to a document. Each user's local device has a copy of the shared document, and processing the stream of changes means updating this local copy so that it is consistent with all of the other users' copies of the document.<br/>
     This talk will explore collaboration software through the lens of event-based thinking, explaining some of the algorithms that are used to implement this kind of software, such as Conflict-free Replicated Data Types (CRDTs). We will highlight new developments in this area, such as local-first software, and identify some open challenges in the area.
   biography: |-
     Martin Kleppmann is a research fellow at the University of Cambridge, and author of “Designing Data-Intensive Applications” (O’Reilly Media, 2017). He works on distributed algorithms, data systems, collaboration software, and security protocols. Previously he was a software engineer and entrepreneur at Internet companies including LinkedIn and Rapportive, where he worked on large-scale data infrastructure and stream processing.
