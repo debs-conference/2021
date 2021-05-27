@@ -57,8 +57,118 @@
     ga('create', 'Your ID', 'auto');
     ga('send', 'pageview');
 </script>
+	
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
 
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
 
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 1px;
+}
+
+.left {
+  width: 2%;
+  height: 60px;
+  margin-top:60px;
+  margin-left: 10px;
+}
+
+.middle {
+  width: 1%;
+  margin-top:60px;
+}
+
+.right {
+  width: 90%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.selectTimezone{
+  margin-top:35px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+</style>
+
+<style>
+	td.timetablecell {
+		cursor:pointer;
+	}
+	.tutorial {
+		background-color: #D6EAF8;
+	}	
+	.break {
+		background-color: #FDEBD0;
+	}	
+	.industry {
+		background-color: #F8C471;
+	}	
+	.research {
+		background-color: #A9DFBF;
+	}	
+	.posters {
+		background-color: #F7DC6F;
+	}	
+	.grandchallenge {
+		background-color: #45B39D;
+	}	
+	.sponsors {
+		background-color: #45B39D;
+	}	
+	.orga {
+		background-color: #ABB2B9;
+	}	
+	.keynote {
+		background-color: #EC7063;
+	}	
+	a.timetablelink {
+		color: black
+	}
+</style>
+
+<script>
+	$( document ).ready(function() {
+		$('.timetablecell').on("click", function() {
+			;
+			$('html, body').animate({
+					scrollTop: ($($(this).find('a.timetablelink').attr('href')).offset().top)
+			},500);
+		});
+	});
+	
+</script>
 
 </head>
 <body>
@@ -71,7 +181,6 @@
             <div class="col-md-12">
                 <div class="block">
                     <h1>FULL PROGRAM</h1>
-                    <p>To Be Announced</p>
                 </div>
             </div>
         </div>
@@ -79,8 +188,145 @@
 </section>
 
 
-<!--  -->
+<section id = "full-program">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1>DEBS 2021 Full Program</h1>
+          </div>
+					<div  id="change">
+						<p>To access our <b>Slack</b> and <b>Zoom</b> links, please register for free by clicking <a href = "http://www.cvent.com/d/gnqjwq" target = _blank>here</a>.</p>
+					</div>
+					<div>
+						<p><b>Note:</b> If you did not receive an e-mail containing the Slack link, please contact <a href="mailto:acmdebs2021@gmail.com">acmdebs2021@gmail.com</a>.</p>
+					</div>
+					<div class="selectTimezone">
+						<!-- Main Script -->
 
+
+						<b>Choose the time zone:</b> <select id="sel" onchange="show(this)">
+
+								<script src="/js/timezone.min.js"></script>
+						</select>
+					</div>
+					<div style="margin-bottom:70px; overflow-x:auto;">
+						<table class="table table-bordered table-hover text-center">
+							<thead class="bg-gray">
+								<tr>
+									<th style="width:10%;" class="text-center">Time</th>
+									<th style="width:18%;" class="text-center">Mon, 28th June</th>
+									<th style="width:18%;" class="text-center">Tue, 29th June</th>
+									<th style="width:18%;" class="text-center">Wed, 30th June</th>
+									<th style="width:18%;" class="text-center">Thu, 1st July</th>
+									<th style="width:18%;" class="text-center">Fri, 2nd July</th>
+								</tr>
+							</thead>
+							<tbody>
+								{%   assign start_h = site.data.timetable.start_time | date: '%k'      %}
+								{%   assign start_m = site.data.timetable.start_time | date: '%M'      %}
+								{%   assign start = start_h | times: 60 | plus: start_m      %}
+								
+								{%   assign offset_h = site.data.timetable.slot_duration | date: '%k' %}
+								{%   assign offset_m = site.data.timetable.slot_duration | date: '%M'  %}
+								{%   assign offset = offset_h | times: 60 | plus: offset_m      %}
+								
+								{%   assign end_h = site.data.timetable.end_time | date: '%k' %}
+								{%   assign end_m = site.data.timetable.end_time | date: '%M'  %}
+								{%   assign end = end_h | times: 60 | plus: end_m      %}
+								
+								{%   assign rows = end | minus: start %}
+								{%   assign rows = rows | divided_by: offset %}
+								
+								{%   assign start_s = site.data.timetable.start_time | date: '%s'      %}
+								
+								{% for counter in (0..rows) %}
+								<tr>
+									{%   assign current = offset | times: counter | times: 60 | plus: start_s    %}
+									<td class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }}</td>
+									
+									{% for day in (0..5) %}
+									{% assign current_day = site.data.timetable.dates | where:"day", day %}
+									
+									{% assign date = current_day | where:"start_slot", counter %}
+									{% assign date_size = date | size %}
+									{% if date_size > 0 %}
+									
+									{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
+									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}: {% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text[0].text}}{% endif %}</a></td>
+									{% endif %}
+									
+									{% endfor %}
+									
+								</tr>
+								{% endfor %}
+								
+							</tbody>
+						</table>
+						<hr>
+						
+						<div>
+              <h1 style="margin:0px;">Session Details</h1>
+            </div>
+            <div>
+              <h2>Monday, July 13th</h2>
+            </div>
+            
+						{% for day in (0..5) %}
+								{% assign current_day = site.data.timetable.dates | where:"day", day %}
+								{% for counter in (0..rows) %}
+								<tr>
+									{% assign current = offset | times: counter | times: 60 | plus: start_s    %}
+									
+									
+									{% assign date = current_day | where:"start_slot", counter %}
+									{% assign date_size = date | size %}
+									{% if date_size > 0 %}
+									{% if date[0].type != "break" and date[0].type != "lunch" and date[0].type != "empty" %}
+									{% if date[0].hide == nil %}
+									
+									{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
+									
+									<div id="{{date[0].type}}_{{day}}_{{date[0].start_slot}}" style="margin-bottom: 30px;">
+
+									</div>
+									<div class="row">
+										<div class="column left {{date[0].type}}">
+
+										</div>
+										<div class="column middle">
+
+										</div>
+										<div class="column right">
+											<h3>{% if date[0].name != nil %}{{date[0].name}}{% else %}{{date[0].text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }}</i> ) <a href="#change">Change the time zone!</a></p></h3>
+											
+											{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text[0].text}}{% endif %}</b>{% endif %}
+											<!--<a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SW_WS6ULsdY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2021_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a>-->
+
+										</div>
+									</div>
+									
+									{% endif %}
+									{% endif %}
+									{% endif %}
+									
+									{% endfor %}
+									
+								</tr>
+								{% endfor %}
+						
+						
+					</div>
+				</div>
+			</div>
+      
+      {% include side.html %}
+			
+
+    </div>
+  </div>
+</section>
 	
 
 	
