@@ -1,0 +1,228 @@
+start_date: "28.06.2021"
+duration: 4
+start_time: "09:00"
+end_time: "14:30"
+slot_duration: "00:15"
+default_text:
+  - type: "break"
+    text: "Discussion break"
+  - type: "lunch"
+    text: "Lunch break"
+  - type: "empty"
+    text: ""
+dates:
+  - start_slot: 0
+    duration_slot: 4
+    day: 0
+    name: "Tutorial 1"
+    text: "Machine Learning over Static and Dynamic Relational Data"
+    type: "tutorial"
+  - start_slot: 4
+    duration_slot: 1
+    day: 0
+    type: "break"
+  - start_slot: 5
+    duration_slot: 4
+    day: 0
+    name: "Tutorial 1"
+    text: "Machine Learning over Static and Dynamic Relational Data"
+    type: "tutorial"
+    hide: true
+  - start_slot: 9
+    duration_slot: 3
+    day: 0
+    type: "lunch"
+  - start_slot: 12
+    duration_slot: 4
+    day: 0
+    name: "Tutorial 2"
+    text: "Web Stream Processing with RSP4J"
+    type: "tutorial"
+  - start_slot: 16
+    duration_slot: 1
+    day: 0
+    type: "break"
+  - start_slot: 17
+    duration_slot: 4
+    day: 0
+    name: "Tutorial 2"
+    text: "Web Stream Processing with RSP4J"
+    type: "tutorial"
+    hide: true
+  - start_slot: 21
+    duration_slot: 1
+    day: 0
+    type: "break"
+  - start_slot: 22
+    duration_slot: 1
+    day: 0
+    type: "empty"
+
+  - start_slot: 0
+    duration_slot: 4
+    day: 1
+    name: "Tutorial 3"
+    text: "Graph Stream Analytics"
+    type: "tutorial"
+  - start_slot: 4
+    duration_slot: 1
+    day: 1
+    type: "break"
+  - start_slot: 5
+    duration_slot: 4
+    day: 1
+    name: "Tutorial 3"
+    text: "Graph Stream Analytics"
+    type: "tutorial"
+  - start_slot: 9
+    duration_slot: 3
+    day: 1
+    type: "lunch"
+  - start_slot: 12
+    duration_slot: 1
+    day: 1
+    type: "sponsors"
+    text: "Sponsors presentation"
+  - start_slot: 13
+    duration_slot: 6
+    day: 1
+    type: "grandchallenge"
+    text: "Grand challenge"
+  - start_slot: 19
+    duration_slot: 1
+    day: 1
+    type: "break"
+  - start_slot: 20
+    duration_slot: 3
+    day: 1
+    type: "empty"
+
+
+  - start_slot: 0
+    duration_slot: 6
+    day: 2
+    name: "Opening speech + Keynote 1"
+    text: "Yanlei Diao"
+    type: "keynote"
+  - start_slot: 6
+    duration_slot: 1
+    day: 2
+    type: "break"
+  - start_slot: 7
+    duration_slot: 4
+    day: 2
+    name: "Research track"
+    text: "3 Papers"
+    type: "research"
+  - start_slot: 11
+    duration_slot: 1
+    day: 2
+    type: "break"
+  - start_slot: 12
+    duration_slot: 3
+    day: 2
+    type: "lunch"
+  - start_slot: 15
+    duration_slot: 3
+    day: 2
+    name: "Research track"
+    text: "2 Papers"
+    type: "research"
+  - start_slot: 18
+    duration_slot: 1
+    day: 2
+    type: "break"
+  - start_slot: 19
+    duration_slot: 4
+    day: 2
+    type: "empty"
+
+
+  - start_slot: 0
+    duration_slot: 3
+    day: 3
+    text: "Test of time"
+    type: "research"
+  - start_slot: 3
+    duration_slot: 3
+    day: 3
+    name: "Research track"
+    text: "2 Papers"
+    type: "research"
+  - start_slot: 6
+    duration_slot: 1
+    day: 3
+    type: "break"
+  - start_slot: 7
+    duration_slot: 4
+    day: 3
+    type: "keynote"
+    name: "Keynote 2"
+    text: "Carlo Curino"
+  - start_slot: 11
+    duration_slot: 1
+    day: 3
+    type: "break"
+  - start_slot: 12
+    duration_slot: 3
+    day: 3
+    type: "lunch"
+  - start_slot: 15
+    duration_slot: 7
+    day: 3
+    type: "posters"
+    text: "Posters & Demos + Doctoral Symposium"
+  - start_slot: 22
+    duration_slot: 1
+    day: 3
+    type: "break"
+
+  - start_slot: 0
+    duration_slot: 4
+    day: 4
+    name: "Keynote"
+    text: "Martin Kleppmann"
+    type: "keynote"
+  - start_slot: 4
+    duration_slot: 1
+    day: 4
+    type: "break"
+  - start_slot: 5
+    duration_slot: 3
+    day: 4
+    type: "industry"
+    name: "Industry track"
+    text: "Invited talk Ralf Klinkenberg"
+  - start_slot: 8
+    duration_slot: 1
+    day: 4
+    type: "break"
+  - start_slot: 9
+    duration_slot: 4
+    day: 4
+    type: "industry"
+    name: "Industry track"
+    text: "1 invited papers + 2 paper"
+  - start_slot: 13
+    duration_slot: 1
+    day: 4
+    type: "break"
+  - start_slot: 14
+    duration_slot: 3
+    day: 4
+    type: "lunch"
+  - start_slot: 17
+    duration_slot: 2
+    day: 4
+    type: "orga"
+    text: "Closing remarks + awards announcements"
+  - start_slot: 19
+    duration_slot: 2
+    day: 4
+    type: "orga"
+    text: "Business meeting"
+  - start_slot: 21
+    duration_slot: 2
+    day: 4
+    type: "empty"
+
