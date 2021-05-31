@@ -102,8 +102,8 @@ dates:
     duration_slot: 6
     day: 2
     name: "Opening speech + Keynote 1"
-    text: "Yanlei Diao"
     type: "keynote"
+    keynote_index: 1
   - start_slot: 6
     duration_slot: 1
     day: 2
@@ -158,7 +158,7 @@ dates:
     day: 3
     type: "keynote"
     name: "Keynote 2"
-    text: "Carlo Curino"
+    keynote_index: 0
   - start_slot: 11
     duration_slot: 1
     day: 3
@@ -180,9 +180,9 @@ dates:
   - start_slot: 0
     duration_slot: 4
     day: 4
-    name: "Keynote"
-    text: "Martin Kleppmann"
+    name: "Keynote 3"
     type: "keynote"
+    keynote_index: 2
   - start_slot: 4
     duration_slot: 1
     day: 4
@@ -192,7 +192,7 @@ dates:
     day: 4
     type: "industry"
     name: "Industry track"
-    text: "Invited talk Ralf Klinkenberg"
+    industry_index: 0
   - start_slot: 8
     duration_slot: 1
     day: 4

@@ -61,7 +61,7 @@
 <script>
 $(document).ready(function(){
   
-  $("a").on('click', function(event) {
+  $("#change").on('click', function(event) {
 
     
     if (this.hash !== "") {
@@ -261,7 +261,19 @@ div.selectTimezone{
 									{% if date_size > 0 %}
 									
 									{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
-									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}: {% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text[0].text}}{% endif %}</a></td>
+									{% assign default_text = default_text[0].text %}
+									{% if date[0].type == "keynote" %}
+										{% assign keynote_index = date[0].keynote_index %}
+										{% assign keynote = site.data.keynotes[keynote_index] %}
+										{% assign default_text = keynote.firstname | append: " " | append: keynote.lastname %}
+									{% endif %}
+									{% if date[0].type == "industry" and date[0].industry_index != nil %}
+										{% assign industry_index = date[0].industry_index %}
+										{% assign industry = site.data.industry[industry_index] %}
+										{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
+									{% endif %}
+									
+									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}: {% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</a></td>
 									{% endif %}
 									
 									{% endfor %}
@@ -302,6 +314,17 @@ div.selectTimezone{
 								{% if date[0].hide == nil %}
 
 								{% assign default_text = site.data.timetable.default_text | where:"type", date[0].type %}
+								{% assign default_text = default_text[0].text %}
+								{% if date[0].type == "keynote" %}
+									{% assign keynote_index = date[0].keynote_index %}
+									{% assign keynote = site.data.keynotes[keynote_index] %}
+									{% assign default_text = keynote.firstname | append: " " | append: keynote.lastname %}
+								{% endif %}
+								{% if date[0].type == "industry" and date[0].industry_index != nil %}
+									{% assign industry_index = date[0].industry_index %}
+									{% assign industry = site.data.industry[industry_index] %}
+									{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
+								{% endif %}
 
 								<div id="{{date[0].type}}_{{day}}_{{date[0].start_slot}}">
 
@@ -314,9 +337,25 @@ div.selectTimezone{
 
 									</div>
 									<div class="column right">
-										<h3>{% if date[0].name != nil %}{{date[0].name}}{% else %}{{date[0].text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) <a href="#change">Change the time zone!</a></p></h3>
+										<h3>{% if date[0].name != nil %}{{date[0].name}}{% else %}{{date[0].text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) <!--<a href="#change">Change the time zone!</a>--></p></h3>
 
-										{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text[0].text}}{% endif %}</b>{% endif %}
+										
+										{% if date[0].type == "keynote" %}
+										
+											{% if date[0].name != nil %}<p><a href="/keynote-speakers/#{{keynote.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
+											{{ keynote.title }}
+										
+										{% elsif date[0].type == "industry" and date[0].industry_index != nil %}
+										
+											{% if date[0].name != nil %}<p><a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
+											{{ industry.title }}
+										
+										{% else %}
+										
+											{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b>{% endif %}
+										
+										{% endif %}
+										
 										<!--<a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SW_WS6ULsdY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2021_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a>-->
 
 									</div>
