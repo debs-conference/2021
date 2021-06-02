@@ -357,6 +357,7 @@ div.selectTimezone{
 											{% for paper in research.papers %}
 										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
 												<p>{{ paper.authors }}</p>
+												{% if paper.abstract != nil %}<p><b>Abstract:</b> {{ paper.abstract }}{% endif %}</p>
 											{% endfor %}
 										
 										{% else %}
