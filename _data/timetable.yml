@@ -82,7 +82,7 @@ dates:
     duration_slot: 1
     day: 1
     type: "sponsors"
-    text: "Sponsors presentation"
+    text: "Sponsor presentations"
   - start_slot: 13
     duration_slot: 6
     day: 1
@@ -153,7 +153,7 @@ dates:
   - start_slot: 0
     duration_slot: 3
     day: 3
-    text: "Test of time"
+    text: "Test of time award talk"
     type: "research"
   - start_slot: 3
     duration_slot: 3
@@ -219,7 +219,6 @@ dates:
     day: 4
     type: "industry"
     name: "Industry track"
-    text: "1 invited papers + 2 paper"
   - start_slot: 13
     duration_slot: 1
     day: 4

@@ -273,7 +273,7 @@ div.selectTimezone{
 										{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
 									{% endif %}
 									
-									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</a></td>
+									<td rowspan="{{date[0].duration_slot}}" class="timetablecell {{date[0].type}}"><a href="#{{date[0].type}}_{{day}}_{{date[0].start_slot}}" class="timetablelink">{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</a></td>
 									{% endif %}
 									
 									{% endfor %}
@@ -340,7 +340,7 @@ div.selectTimezone{
 
 									</div>
 									<div class="column right">
-										<h3>{% if date[0].name != nil %}{{date[0].name}}{% else %}{{date[0].text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) <!--<a href="#change">Change the time zone!</a>--></p></h3>
+										<h3>{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) <!--<a href="#change">Change the time zone!</a>--></p></h3>
 
 										
 										{% if date[0].type == "keynote" %}
@@ -354,11 +354,9 @@ div.selectTimezone{
 											{{ industry.title }}
 										
 										{% elsif date[0].type == "research" and date[0].papers != nil %}
-											{% assign i = 1 %}
-										  {% for paper in research.papers %}
-										    <h4 style="margin-top: 40px">Paper {{i}}: <b>{{ paper.title }}</b></h4>
+											{% for paper in research.papers %}
+										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
 												<p>{{ paper.authors }}</p>
-												{% assign i = i | plus: 1 %}
 											{% endfor %}
 										
 										{% else %}
