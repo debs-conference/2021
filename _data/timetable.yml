@@ -111,8 +111,15 @@ dates:
   - start_slot: 7
     duration_slot: 4
     day: 2
-    name: "Research track"
-    text: "3 Papers"
+    name: "Research track 1"
+    text: "Blockchain"
+    papers:
+      - title: An Event Driven Framework for Smart Contract Execution
+        authors: Mudabbir Kaleem, Keshav Kasichainula, Rabimba Karanjai, Lei Xu, Zhimin Gao, Lin Chen and Weidong Shi
+      - title: Semantics-Enabled Event-Driven Decentralized Marketplaces on Blockchains
+        authors: <a target="_blank" href="http://www.csc.ncsu.edu/faculty/anyanwu">Akash Pateria</a> and Kemafor Anyanwu
+      - title: An Experimental Framework for Improving the Performance of BFT Consensus For Future Permissioned Blockchains
+        authors: Man-Kit Sit, Manuel Bravo and Zsolt István
     type: "research"
   - start_slot: 11
     duration_slot: 1
@@ -125,9 +132,14 @@ dates:
   - start_slot: 15
     duration_slot: 3
     day: 2
-    name: "Research track"
-    text: "2 Papers"
+    name: "Research track 2"
+    text: "Stream Processing"
     type: "research"
+    papers:
+      - title: Box Queries over Multi-Dimensional Streams
+        authors: Roy Friedman and Rana Shahout
+      - title: Fast Recovery of Correlated Failures in Distributed Stream Processing Engines
+        authors: Li Su and Yongluan Zhou
   - start_slot: 18
     duration_slot: 1
     day: 2
@@ -146,8 +158,13 @@ dates:
   - start_slot: 3
     duration_slot: 3
     day: 3
-    name: "Research track"
-    text: "2 Papers"
+    name: "Research track 3"
+    text: "Cloud-Native Computing"
+    papers:
+      - title: Distributed Transactions on Serverless Stateful Functions
+        authors: Martijn de Heus, Kyriakos Psarakis, Marios Fragkoulis and Asterios Katsifodimos
+      - title: A Distributed Database System for Event-based Microservices
+        authors: <a target="_blank" href="http://rnlaigner.github.io/">Rodrigo Laigner</a>, <a target="_blank" href="https://ylzhou.github.io/">Yongluan Zhou</a> and <a target="_blank" href="http://hjemmesider.diku.dk/~vmarcos/">Marcos Antonio Vaz Salles</a>
     type: "research"
   - start_slot: 6
     duration_slot: 1
