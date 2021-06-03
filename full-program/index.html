@@ -325,9 +325,6 @@ div.selectTimezone{
 									{% assign industry = site.data.industry[industry_index] %}
 									{% assign default_text = industry.firstname | append: " " | append: industry.lastname %}
 								{% endif %}
-								{% if date[0].type == "research" %}
-									{% assign research = date[0] %}
-								{% endif %}
 
 								<div id="{{date[0].type}}_{{day}}_{{date[0].start_slot}}">
 
@@ -352,9 +349,11 @@ div.selectTimezone{
 										
 											{% if date[0].name != nil %}<p><a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
 											{{ industry.title }}
+										{% elsif date[0].type == "tutorial" and date[0].authors != nil %}
+											<p>{{ date[0].authors }}</p>
 										
-										{% elsif date[0].type == "research" and date[0].papers != nil %}
-											{% for paper in research.papers %}
+										{% elsif date[0].papers != nil %}
+											{% for paper in date[0].papers %}
 										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
 												<p>{{ paper.authors }}</p>
 												{% if paper.abstract != nil %}<p><b>Abstract:</b> {{ paper.abstract }}{% endif %}</p>
