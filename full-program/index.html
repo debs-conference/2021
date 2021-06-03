@@ -343,12 +343,15 @@ div.selectTimezone{
 										{% if date[0].type == "keynote" %}
 										
 											{% if date[0].name != nil %}<p><a href="/keynote-speakers/#{{keynote.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
-											{{ keynote.title }}
+										{{ keynote.title }}</p>
+											{% if date[0].paper != nil %}
+												<p>Corresponding paper: {{ date[0].paper.title }} from <i>{{ date[0].paper.authors }}</i></p>
+											{% endif %}
 										
 										{% elsif date[0].type == "industry" and date[0].industry_index != nil %}
 										
 											{% if date[0].name != nil %}<p><a href="/industry-speakers/#{{industry.lastname}}"><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b></a>:{% endif %}
-											{{ industry.title }}
+											{{ industry.title }}</p>
 										{% elsif date[0].type == "tutorial" and date[0].authors != nil %}
 											<p>{{ date[0].authors }}</p>
 										
