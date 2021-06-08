@@ -212,19 +212,19 @@ dates:
     type: "posters"
     text: "Posters & Demos + Doctoral Symposium"
     papers:
-      - title: 'Enforcing Consistency in Microservice Architectures through Event-based Constraints'
-        authors: 'Anna Lesniak, Rodrigo Laigner, Yongluan Zhou'
-      - title: 'Real-Time Processing of Geo-Distributed Financial Data'
-        authors: 'Antonios Kontaxakis, Antonios Deligiannakis, Holger Arndt, Stefan Burkard, Claus-Peter Kettner, Elke Pelikan, Kathleen Noack'
-      - title: 'Towards Creating a Generalized Complex Event Processing Operator Using FlinkCEP: Architecture &amp; Benchmark'
+      - title: 'Poster: Towards Creating a Generalized Complex Event Processing Operator Using FlinkCEP: Architecture &amp; Benchmark'
         authors: 'Eleni Kougioumtzi, Antonios Kontaxakis, Antonios Deligiannakis, Yannis Kotidis'
-      - title: 'Towards Autonomous Semantic Stream Fusion For Distributed Video Streams'
+      - title: 'Poster: Real-Time Processing of Geo-Distributed Financial Data'
+        authors: 'Antonios Kontaxakis, Antonios Deligiannakis, Holger Arndt, Stefan Burkard, Claus-Peter Kettner, Elke Pelikan, Kathleen Noack'
+      - title: 'Demo: Towards Autonomous Semantic Stream Fusion For Distributed Video Streams'
         authors: 'Manh Nguyen Duc, Anh Le-Tuan, Manfred Hauswirth, Danh Le Phuoc'
-      - title: 'HawkEDA: A Tool for Quantifying Data Integrity Violations in Event-driven Microservices'
+      - title: 'Demo: HawkEDA: A Tool for Quantifying Data Integrity Violations in Event-driven Microservices'
         authors: 'Prangshuman Das, Rodrigo Laigner, Yongluan Zhou'
-      - title: 'Building An End-To-End BAD Application'
+      - title: 'Demo: Enforcing Consistency in Microservice Architectures through Event-based Constraints'
+        authors: 'Anna Lesniak, Rodrigo Laigner, Yongluan Zhou'
+      - title: 'Demo: Building An End-To-End BAD Application'
         authors: 'Shahrzad Haji Amin Shirazi, Michael J. Carey, Vassilis J. Tsotras'
-      - title: 'Accelerating the Performance of Data Analytics using Network-centric Processing'
+      - title: 'Doctoral: Accelerating the Performance of Data Analytics using Network-centric Processing'
         authors: 'Bochra Boughzala'
   - start_slot: 22
     duration_slot: 1
