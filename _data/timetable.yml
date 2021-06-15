@@ -3,6 +3,7 @@ duration: 4
 start_time: "09:00"
 end_time: "14:30"
 slot_duration: "00:15"
+show_url: false
 default_text:
   - type: "break"
     text: "Discussion break"
@@ -18,6 +19,7 @@ dates:
     text: "Machine Learning over Static and Dynamic Relational Data"
     authors: "Ahmet Kara, Milos Nikolic, Dan Olteanu, Haozhe Zhang"
     type: "tutorial"
+    doi: "https://doi.org/10.1145/3465480.3467843"
   - start_slot: 4
     duration_slot: 1
     day: 0
@@ -40,6 +42,7 @@ dates:
     text: "Web Stream Processing with RSP4J"
     authors: "Riccardo Tommasini, Pieter Bonte"
     type: "tutorial"
+    doi: "https://doi.org/10.1145/3465480.3467844"
   - start_slot: 16
     duration_slot: 1
     day: 0
@@ -67,6 +70,7 @@ dates:
     text: "Graph Stream Analytics"
     authors: "Andras A. Benczur, Ferenc Beres, Domokos Kelen, Robert Palovics"
     type: "tutorial"
+    doi: "https://doi.org/10.1145/3465480.3468293"
   - start_slot: 4
     duration_slot: 1
     day: 1
@@ -94,13 +98,17 @@ dates:
     text: "Grand challenge"
     papers:
       - title: 'Solving the 2021 DEBS Grand Challenge using Apache Flink'
-        authors: 'Baiqing Lyu, Mina Morcos, Snigdha Kalathur'
+        authors: 'Mina Morcos, Baiqing Lyu, Snigdha Kalathur'
+        doi: "https://doi.org/10.1145/3465480.3466929"
       - title: 'The DEBS 2021 Grand Challenge'
         authors: 'Jawad Tahir, Christoph Doblander, Ruben Mayer, Sebastian Frischbier, Hans-Arno Jacobsen'
+        doi: "https://doi.org/10.1145/3465480.3467836"
       - title: 'DEBS Grand Challenge: Real-Time Detection of Air Quality Improvement with Apache Flink '
         authors: 'Josip Marić, Krešimir Pripužić, Martina Antonić'
+        doi: "https://doi.org/10.1145/3465480.3466930"
       - title: 'Scalable Analytics of Air Quality Batches with Apache Spark and Apache Sedona'
         authors: 'Rim Moussa'
+        doi: "https://doi.org/10.1145/3465480.3466931"
   - start_slot: 19
     duration_slot: 1
     day: 1
@@ -133,12 +141,16 @@ dates:
       - title: An Event Driven Framework for Smart Contract Execution
         authors: Mudabbir Kaleem, Keshav Kasichainula, Rabimba Karanjai, Lei Xu, Zhimin Gao, Lin Chen and Weidong Shi
         abstract: "Blockchain-based smart contract platforms have traditionally em- ployed the transaction-driven execution model. This paper presents an alternate framework for blockchain-based smart contract execu- tion called EDSC. Our platform design presents a novel approach to tackle the scalability and performance challenges facing the smart contract ecosystem. We base EDSC’s design on the Ethereum tem- plate, and it can be readily implemented for other existing smart contract platforms. To evaluate our design, we perform an experi- mental implementation using the Ethereum client. Our experiments with performance modeling show, on average, a 2.2 to 4.6 times reduced total latency of event-triggered smart contracts, demon- strating the effectiveness of the design in supporting time-sensitive applications. Additionally, we comment on the design’s potential security aspects and demonstrate its utility by discussing potential use cases."
+        doi: "https://doi.org/10.1145/3465480.3466924"
       - title: Towards Event-driven Decentralized Marketplaces on the BlockChain
         authors: 'Akash Pateria, Kemafor Anyanwu'
+        abstract: 'Blockchains have become a popular technology for lowering the trust-tax burden between transacting parties that cannot necessar- ily trust each other. They are used as substitutes for the centralized authorities typically incorporated in transactional workflows to per- form verification tasks and have the advantage of being objective and incorruptible. For applications such as supply chain market- places, auxilliary functionalities beyond the core blockchain roles of recording and validating transactions such as event detection are important for enabling application participants be responsive to business conditions. Unfortunately, existing blockchain event frameworks are immature, syntactic, inflexible and not expressive enough for many application needs.<br/>In this paper, we propose an approach that involves an event model which "semantifies blockchain transactions" and an imple- mentation architecture that integrates a open-source blockchain database BigChainDB with a semantic engine and publish-subscribe messaging platform. Finally, we model and simulate a use-case in- spired from the manufacturing domain and present usability and preliminary performance results that demonstrate the discrimina- tory ability of semantics-enabled event model.'
+        doi: "https://doi.org/10.1145/3465480.3466921"
       - title: An Experimental Framework for Improving the Performance of BFT Consensus For Future Permissioned Blockchains
         authors: 'Man-Kit Sit, Manuel Bravo, Zsolt István'
         abstract: "Blockchains have become a popular technology for lowering the trust-tax burden between transacting parties that cannot necessar ily trust each other. They are used as substitutes for the centralized  authorities typically incorporated in transactional workflows to per form verification tasks and have the advantage of being objective and incorruptible. For applications such as supply chain market places, auxilliary functionalities beyond the core blockchain roles  of recording and validating transactions such as event detection  are important for enabling application participants be responsive  to business conditions. Unfortunately, existing blockchain event  frameworks are immature, syntactic, inflexible and not expressive  enough for many application needs.  In this paper, we propose an approach that involves an event  model which 'semantifies blockchain transactions' and an implementation architecture that integrates a open-source blockchain  database BigChainDB with a semantic engine and publish-subscribe  messaging platform. Finally, we model and simulate a use-case in  spired from the manufacturing domain and present usability and  preliminary performance results that demonstrate the discriminatory ability of semantics-enabled event model."
         youtube: https://www.youtube.com/watch?v=gljDaye09kU
+        doi: https://doi.org/10.1145/3465480.3466922
         speaker:
           name: "Zsolt István"
           bio: "Zsolt István is an Associate Professor at the IT University of Copenhagen. Before that, he was an Assistant Research Professor at the IMDEA Software Institute in Madrid, Spain. Zsolt works in the intersection of databases, distributed systems, and FPGA programming. He has a PhD in Computer Science from the Systems Group at ETH Zurich, Switzerland."
@@ -161,9 +173,11 @@ dates:
       - title: Box Queries over Multi-Dimensional Streams
         authors: 'Roy Friedman, Rana Shahout'
         abstract: "Answering statistical queries about streams of online arriving data is becoming increasingly important. Often, such data includes multiple-attributes, so data elements can be viewed as points in a multi-dimensional universe. This paper extends existing works on streaming algorithms by studying the ability to perform box queries on online multi-dimensional data streams. We develop three algo- rithms C-DARQ, DARQ and MARQ that support such capabilities for a large number of statistical functions including (but not limited to) counting, frequency estimation, heavy-hitters etc. The protocols are analyzed and evaluated over synthetic and datasets from Kaggle in multiple dimensions (up to 8). Our algorithms asymptotically improve the space bounds as well as update and query performance of existing works. Unlike known approaches, our algorithms can also be used to solve a larger class of problems beyond counting. We further discuss extending our work to the sliding window model and when the dimensions’ bounds are a-priori unknown."
+        doi: "https://doi.org/10.1145/3465480.3466925"
       - title: Fast Recovery of Correlated Failures in Distributed Stream Processing Engines
         authors: 'Li Su, Yongluan Zhou'
         abstract: "In a large-scale cluster, correlated failures usually involve a number of nodes failing simultaneously. Although correlated failures occur infrequently, they have significant effect on systems’ availability, es- pecially for streaming applications that require real-time analysis, as repairing the failed nodes or acquiring additional ones would take a significant amount of time. Most state-of-the-art distributed stream processing systems (DSPSs) focus on recovering individual failures and do not consider the optimization for recovering correlated failure. In this work, we propose an incremental and query-centric recovery paradigm where the recovery of failed operator partitions would be carefully scheduled based on the current availability of resources, such that the outputs of queries can be recovered as early as possible. By analyzing the existing recovery techniques, we identify the challenges and propose a fault-tolerance framework that can support incremen- tal recovery with minimum overhead during the system’s normal execution. We also formulate the new problem of recovery schedul- ing under correlated failures and design algorithms to optimize the recovery latency with a performance guarantee. A comprehensive set of experiments are conducted to study the validity of our proposal."
+        doi: "https://doi.org/10.1145/3465480.3466923"
   - start_slot: 18
     duration_slot: 1
     day: 2
@@ -188,9 +202,11 @@ dates:
       - title: Distributed Transactions on Serverless Stateful Functions
         authors: 'Martijn de Heus, Kyriakos Psarakis, Marios Fragkoulis, Asterios Katsifodimos'
         abstract: "Serverless computing is currently the fastest-growing cloud services segment. The most prominent serverless offering is Function-as-a- Service (FaaS), where users write functions and the cloud automates deployment, maintenance, and scalability. Although FaaS is a good fit for executing stateless functions, it does not adequately sup- port stateful constructs like microservices and scalable, low-latency cloud applications, mainly because it lacks proper state manage- ment support and the ability to perform function-to-function calls. Most importantly, executing transactions across stateful functions remains an open problem.<br/>In this paper, we introduce a programming model and implemen- tation for transaction orchestration of stateful serverless functions. Our programming model supports serializable distributed trans- actions with two-phase commit, as well as relaxed transactional guarantees with Sagas. We design and implement our programming model on Apache Flink StateFun. We choose to build our solution on top of StateFun in order to leverage Flink’s exactly-once processing and state management guarantees. We base our evaluation on the YCSB benchmark, which we extended with transactional operations and adapted for the SFaaS programming model. Our experiments show that our transactional orchestration adds 10% overhead to the original system and that Sagas can achieve up to 34% more transactions per second than two-phase commit transactions at a sub-200ms latency."
+        doi: "https://doi.org/10.1145/3465480.3466920"
       - title: A Distributed Database System for Event-based Microservices
         authors: 'Rodrigo Laigner, Yongluan Zhou, Marcos Antonio Vaz Salles'
         abstract: "Microservice architectures are an emerging industrial approach to build large scale and event-based systems. In this architectural style, an application is functionally partitioned into several small and au- tonomous building blocks, so-called microservices, communicating and exchanging data with each other via events.<br/>By pursuing a model where fault isolation is enforced at mi- croservice level, each microservice manages their own database, thus database systems are not shared across microservices. Developers end up encoding substantial data management logic in the application-tier and encountering a series of challenges on enforcing data integrity and maintaining data consistency across microservices.<br/>In this vision paper, we argue that there is a need to rethink how database systems can better support microservices and relieve the burden of handling complex data management tasks faced by programmers. We envision the design and research opportunities for a novel distributed database management system targeted at event-driven microservices."
+        doi: "https://doi.org/10.1145/3465480.3466919"
     type: "research"
   - start_slot: 6
     duration_slot: 1
@@ -218,18 +234,25 @@ dates:
     papers:
       - title: 'Poster: Towards Creating a Generalized Complex Event Processing Operator Using FlinkCEP: Architecture &amp; Benchmark'
         authors: 'Eleni Kougioumtzi, Antonios Kontaxakis, Antonios Deligiannakis, Yannis Kotidis'
+        doi: "https://doi.org/10.1145/3465480.3467841"
       - title: 'Poster: Real-Time Processing of Geo-Distributed Financial Data'
         authors: 'Antonios Kontaxakis, Antonios Deligiannakis, Holger Arndt, Stefan Burkard, Claus-Peter Kettner, Elke Pelikan, Kathleen Noack'
+        doi: "https://doi.org/10.1145/3465480.3467842"
       - title: 'Demo: Towards Autonomous Semantic Stream Fusion For Distributed Video Streams'
         authors: 'Manh Nguyen Duc, Anh Le-Tuan, Manfred Hauswirth, Danh Le Phuoc'
+        doi: "https://doi.org/10.1145/3465480.3467837"
       - title: 'Demo: HawkEDA: A Tool for Quantifying Data Integrity Violations in Event-driven Microservices'
         authors: 'Prangshuman Das, Rodrigo Laigner, Yongluan Zhou'
+        doi: "https://doi.org/10.1145/3465480.3467838"
       - title: 'Demo: Enforcing Consistency in Microservice Architectures through Event-based Constraints'
         authors: 'Anna Lesniak, Rodrigo Laigner, Yongluan Zhou'
+        doi: "https://doi.org/10.1145/3465480.3467839"
       - title: 'Demo: Building An End-To-End BAD Application'
         authors: 'Shahrzad Haji Amin Shirazi, Michael J. Carey, Vassilis J. Tsotras'
+        doi: "https://doi.org/10.1145/3465480.3467840"
       - title: 'Doctoral: Accelerating the Performance of Data Analytics using Network-centric Processing'
         authors: 'Bochra Boughzala'
+        doi: "https://doi.org/10.1145/3465480.3468162"
   - start_slot: 22
     duration_slot: 1
     day: 3
@@ -263,10 +286,13 @@ dates:
     papers:
       - title: 'The Synergy of Complex Event Processing and Tiny Machine Learning in Industrial IoT '
         authors: 'Haoyu Ren, Darko Anicic, Thomas Runkler'
+        doi: "https://doi.org/10.1145/3465480.3466928"
       - title: 'S2CE: A Hybrid Cloud and Edge Orchestrator for Mining Exascale Distributed Streams'
         authors: 'Nicolas Kourtellis, Herodotos Herodotou, Maciej Grzenda, Piotr Wawrzyniak, Albert Bifet'
+        doi: "https://doi.org/10.1145/3465480.3466926"
       - title: 'Descriptor Based Consensus for Blockchain Transactions'
         authors: 'Zachary Painter, Victor Cook, Christina Peterson, Damian Dechev'
+        doi: "https://doi.org/10.1145/3465480.3466927"
   - start_slot: 13
     duration_slot: 1
     day: 4
