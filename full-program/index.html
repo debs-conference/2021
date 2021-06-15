@@ -359,6 +359,9 @@ div.selectTimezone{
 											{% for paper in date[0].papers %}
 										    <h4 style="margin-top: 40px"><b>{{ paper.title }}</b></h4>
 												<p>{{ paper.authors }}</p>
+												{% if paper.youtube != nil %}
+												<p><a href = {{paper.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% if paper.speaker != nil %}<br>Speaker: <b>{{paper.speaker}}</b>{% endif %}</p>
+												{% endif %}
 <!--												{% if paper.abstract != nil %}<p><b>Abstract:</b> {{ paper.abstract }}{% endif %}</p> -->
 											{% endfor %}
 										
