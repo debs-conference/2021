@@ -139,7 +139,9 @@ dates:
         authors: 'Man-Kit Sit, Manuel Bravo, Zsolt István'
         abstract: "Blockchains have become a popular technology for lowering the trust-tax burden between transacting parties that cannot necessar ily trust each other. They are used as substitutes for the centralized  authorities typically incorporated in transactional workflows to per form verification tasks and have the advantage of being objective and incorruptible. For applications such as supply chain market places, auxilliary functionalities beyond the core blockchain roles  of recording and validating transactions such as event detection  are important for enabling application participants be responsive  to business conditions. Unfortunately, existing blockchain event  frameworks are immature, syntactic, inflexible and not expressive  enough for many application needs.  In this paper, we propose an approach that involves an event  model which 'semantifies blockchain transactions' and an implementation architecture that integrates a open-source blockchain  database BigChainDB with a semantic engine and publish-subscribe  messaging platform. Finally, we model and simulate a use-case in  spired from the manufacturing domain and present usability and  preliminary performance results that demonstrate the discriminatory ability of semantics-enabled event model."
         youtube: https://www.youtube.com/watch?v=gljDaye09kU
-        speaker: "Zsolt István"
+        speaker:
+          name: "Zsolt István"
+          bio: "Zsolt István is an Associate Professor at the IT University of Copenhagen. Before that, he was an Assistant Research Professor at the IMDEA Software Institute in Madrid, Spain. Zsolt works in the intersection of databases, distributed systems, and FPGA programming. He has a PhD in Computer Science from the Systems Group at ETH Zurich, Switzerland."
     type: "research"
   - start_slot: 11
     duration_slot: 1
