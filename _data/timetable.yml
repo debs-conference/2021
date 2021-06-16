@@ -3,7 +3,7 @@ duration: 4
 start_time: "09:00"
 end_time: "14:30"
 slot_duration: "00:15"
-show_url: false
+show_url: true
 default_text:
   - type: "break"
     text: "Discussion break"
