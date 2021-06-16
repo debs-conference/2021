@@ -125,9 +125,6 @@ dates:
     name: "Opening speech + Keynote 1"
     type: "keynote"
     keynote_index: 1
-    paper:
-      title: 'Explainable Anomaly Detection on High-Dimensional Time Series Data'
-      authors: 'Bijan Rad, Fei Song, Vincent Jacob, Yanlei Diao'
   - start_slot: 6
     duration_slot: 1
     day: 2
