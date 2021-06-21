@@ -289,8 +289,8 @@ dates:
         doi: "https://doi.org/10.1145/3465480.3467840"
         youtube: https://youtu.be/0AXmf4YvaKg
         speaker:
-          name: "Prangshuman Das"
-          bio: "I recently defended my thesis while building this tool and completed my MSc. in Computer Science from the University of Copenhagen, Denmark."
+          name: "Shahrzad Haji Amin Shirazi"
+          bio: "Shahrzad Haji Amin Shirazi is a Ph.D. student at the Department of Computer Science and Engineering at University of California Riverside. She is currently working on the Big Active Data system which is part of Apache AsterixDB."
       - title: 'Doctoral: Accelerating the Performance of Data Analytics using Network-centric Processing'
         authors: 'Bochra Boughzala'
         doi: "https://doi.org/10.1145/3465480.3468162"
