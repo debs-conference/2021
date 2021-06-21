@@ -296,8 +296,8 @@ dates:
         doi: "https://doi.org/10.1145/3465480.3468162"
         youtube: https://youtu.be/HDrz1j9EgnI
         speaker:
-          name: "Shahrzad Haji Amin Shirazi"
-          bio: "Shahrzad Haji Amin Shirazi is a Ph.D. student at the Department of Computer Science and Engineering at University of California Riverside. She is currently working on the Big Active Data system which is part of Apache AsterixDB."
+          name: "Bochra Boughzala"
+          bio: "Bochra Boughzala is currently pursuing a Ph.D. degree in computer science at the University of Groningen in the Netherlands. She received her M. Sc. degree from Université du Québec à Montréal in Canada, in 2013. She then worked with Ericsson Research Montreal as a Researcher in the area of IP and Transport and Cloud technologies. She also worked with a Montreal-based startup as a Software Designer for building data center networking solutions. Her research interests include Software-Defined Networking and high-performance packet processing."
   - start_slot: 22
     duration_slot: 1
     day: 3
