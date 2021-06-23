@@ -337,7 +337,7 @@ div.selectTimezone{
 
 									</div>
 									<div class="column right">
-										<h3>{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) <!--<a href="#change">Change the time zone!</a>--></p></h3>
+										<h3>{% if date[0].name != nil %}{{date[0].name}}{% if date[0].text != nil or default_text!=nil %}: {% endif %}{% endif %}{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %} <p>(<i class="time" time="{{ current | date: "%H_%M" }}">{{ current | date: "%H:%M" }} EDT</i> ) {% if date[0].chair != nil %} <br/> Chair: {{date[0].chair}} {% endif %} <!--<a href="#change">Change the time zone!</a>--></p></h3>
 
 										
 										{% if date[0].type == "keynote" %}

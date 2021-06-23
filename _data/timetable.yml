@@ -71,6 +71,7 @@ dates:
     authors: "Andras A. Benczur, Ferenc Beres, Domokos Kelen, Robert Palovics"
     type: "tutorial"
     doi: "https://doi.org/10.1145/3465480.3468293"
+    chair: "Tilmann Rabl"
   - start_slot: 4
     duration_slot: 1
     day: 1
@@ -96,6 +97,7 @@ dates:
     day: 1
     type: "grandchallenge"
     text: "Grand challenge"
+    chair: "Grand Challenge Co-Chairs"
     papers:
       - title: 'Solving the 2021 DEBS Grand Challenge using Apache Flink'
         authors: 'Mina Morcos, Baiqing Lyu, Snigdha Kalathur'
@@ -150,6 +152,7 @@ dates:
     day: 2
     name: "Research track 1"
     text: "Blockchain"
+    chair: "Martin Ugarte"
     papers:
       - title: An Event Driven Framework for Smart Contract Execution
         authors: Mudabbir Kaleem, Keshav Kasichainula, Rabimba Karanjai, Lei Xu, Zhimin Gao, Lin Chen and Weidong Shi
@@ -186,6 +189,7 @@ dates:
     name: "Research track 2"
     text: "Stream Processing"
     type: "research"
+    chair: "Asterios Katsifodimos"
     papers:
       - title: Box Queries over Multi-Dimensional Streams
         authors: 'Roy Friedman, Rana Shahout'
@@ -214,11 +218,13 @@ dates:
     day: 3
     text: "Test of time award talk"
     type: "research"
+    chair: "Peter Pietzuch"
   - start_slot: 3
     duration_slot: 3
     day: 3
     name: "Research track 3"
     text: "Cloud-Native Computing"
+    chair: "Holger Ziekow"
     papers:
       - title: Distributed Transactions on Serverless Stateful Functions
         authors: 'Martijn de Heus, Kyriakos Psarakis, Marios Fragkoulis, Asterios Katsifodimos'
@@ -246,6 +252,7 @@ dates:
     day: 3
     type: "keynote"
     name: "Keynote 2"
+    chair: "Letizia Tanca"
     keynote_index: 0
   - start_slot: 11
     duration_slot: 1
@@ -260,6 +267,7 @@ dates:
     day: 3
     type: "posters"
     text: "Posters & Demos + Doctoral Symposium"
+    chair: "Stijn Vansummeren + Daniele Dell'Aglio"
     papers:
       - title: 'Poster: Towards Creating a Generalized Complex Event Processing Operator Using FlinkCEP: Architecture &amp; Benchmark'
         authors: 'Eleni Kougioumtzi, Antonios Kontaxakis, Antonios Deligiannakis, Yannis Kotidis'
@@ -321,6 +329,7 @@ dates:
     name: "Keynote 3"
     type: "keynote"
     keynote_index: 2
+    chair: "Alessandro Margara"
   - start_slot: 4
     duration_slot: 1
     day: 4
@@ -331,6 +340,7 @@ dates:
     type: "industry"
     name: "Invited industry talk"
     industry_index: 0
+    chair: "Sabri Skhiri"
   - start_slot: 8
     duration_slot: 1
     day: 4
@@ -371,6 +381,7 @@ dates:
     day: 4
     type: "orga"
     text: "Closing remarks + awards announcements"
+    chair: "Peter Pietzuch"
   - start_slot: 19
     duration_slot: 2
     day: 4
