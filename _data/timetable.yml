@@ -107,7 +107,11 @@ dates:
       - title: 'The DEBS 2021 Grand Challenge'
         authors: 'Jawad Tahir, Christoph Doblander, Ruben Mayer, Sebastian Frischbier, Hans-Arno Jacobsen'
         doi: "https://doi.org/10.1145/3465480.3467836"
-      - title: 'DEBS Grand Challenge: Real-Time Detection of Air Quality Improvement with Apache Flink '
+        youtube: https://youtu.be/z40JbV637mo
+        speaker:
+          name: "Jawad Tahir"
+          bio: "Jawad Tahir is a Ph.D. candidate at the Technical University of Munich and co-chair of the DEBS '21 Grand Challenge track. Previously, he worked on power chips of 5G modems at Intel. Currently, he is benchmarking distributed systems under defined constraints. His research interests include distributed systems, stream processing, fault tolerance, and reinforcement learning."
+      - title: 'DEBS Grand Challenge: Real-Time Detection of Air Quality Improvement with Apache Flink'
         authors: 'Josip Marić, Krešimir Pripužić, Martina Antonić'
         doi: "https://doi.org/10.1145/3465480.3466930"
         youtube: https://youtu.be/2YPdcU5Aj4w
