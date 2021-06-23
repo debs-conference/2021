@@ -138,10 +138,17 @@ dates:
 
 
   - start_slot: 0
-    duration_slot: 6
+    duration_slot: 2
     day: 2
-    name: "Opening speech + Keynote 1"
+    name: "Opening speech"
+    type: "orga"
+    chair: "General Co-Chairs + PC Co-Chairs"
+  - start_slot: 2
+    duration_slot: 4
+    day: 2
+    name: "Keynote 1"
     type: "keynote"
+    chair: "Nesime Tatbul"
     keynote_index: 1
   - start_slot: 6
     duration_slot: 1
