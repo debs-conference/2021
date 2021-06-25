@@ -210,6 +210,10 @@ dates:
         authors: 'Li Su, Yongluan Zhou'
         abstract: "In a large-scale cluster, correlated failures usually involve a number of nodes failing simultaneously. Although correlated failures occur infrequently, they have significant effect on systems’ availability, es- pecially for streaming applications that require real-time analysis, as repairing the failed nodes or acquiring additional ones would take a significant amount of time. Most state-of-the-art distributed stream processing systems (DSPSs) focus on recovering individual failures and do not consider the optimization for recovering correlated failure. In this work, we propose an incremental and query-centric recovery paradigm where the recovery of failed operator partitions would be carefully scheduled based on the current availability of resources, such that the outputs of queries can be recovered as early as possible. By analyzing the existing recovery techniques, we identify the challenges and propose a fault-tolerance framework that can support incremen- tal recovery with minimum overhead during the system’s normal execution. We also formulate the new problem of recovery schedul- ing under correlated failures and design algorithms to optimize the recovery latency with a performance guarantee. A comprehensive set of experiments are conducted to study the validity of our proposal."
         doi: "https://doi.org/10.1145/3465480.3466923"
+        youtube: https://youtu.be/gAGE5wDTYME
+        speaker:
+          name: "Li Su"
+          bio: "Li Su a senior engineer in Data Analytics and Intelligence Lab, Alibaba DAMO Academy. Before joining Alibaba, he was a postdoc in the database group at University of Copenhagen, working with Professor Yongluan Zhou."
   - start_slot: 18
     duration_slot: 1
     day: 2
