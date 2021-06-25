@@ -19,6 +19,7 @@ dates:
     text: "Machine Learning over Static and Dynamic Relational Data"
     authors: "Ahmet Kara, Milos Nikolic, Dan Olteanu, Haozhe Zhang"
     type: "tutorial"
+    chair: "Martin Ugarte"
     doi: "https://doi.org/10.1145/3465480.3467843"
   - start_slot: 4
     duration_slot: 1
@@ -42,6 +43,7 @@ dates:
     text: "Web Stream Processing with RSP4J"
     authors: "Riccardo Tommasini, Pieter Bonte"
     type: "tutorial"
+    chair: "Emanuele Della Valle"
     doi: "https://doi.org/10.1145/3465480.3467844"
   - start_slot: 16
     duration_slot: 1
@@ -235,7 +237,7 @@ dates:
     day: 3
     name: "Research track 3"
     text: "Cloud-Native Computing"
-    chair: "Holger Ziekow"
+    chair: "Holger Pirk"
     papers:
       - title: Distributed Transactions on Serverless Stateful Functions
         authors: 'Martijn de Heus, Kyriakos Psarakis, Marios Fragkoulis, Asterios Katsifodimos'
@@ -361,6 +363,7 @@ dates:
     day: 4
     type: "industry"
     name: "Industry track"
+    chair: "Gianmarco Aversano"
     papers:
       - title: 'The Synergy of Complex Event Processing and Tiny Machine Learning in Industrial IoT '
         authors: 'Haoyu Ren, Darko Anicic, Thomas Runkler'
@@ -372,6 +375,10 @@ dates:
       - title: 'S2CE: A Hybrid Cloud and Edge Orchestrator for Mining Exascale Distributed Streams'
         authors: 'Nicolas Kourtellis, Herodotos Herodotou, Maciej Grzenda, Piotr Wawrzyniak, Albert Bifet'
         doi: "https://doi.org/10.1145/3465480.3466926"
+        youtube: https://youtu.be/DP0uI-m1BMg
+        speaker:
+          name: "Nicolas Kourtellis"
+          bio: "Nicolas Kourtellis holds a PhD in Computer Science & Engineering from the University of South Florida, USA (2012). He has done research @Yahoo Labs, USA & @Telefonica Research, Spain, on online user privacy and behavior modeling, Internet measurements and distributed systems, with 70+ published peer-reviewed papers. Lately, he focuses on CyberPrivacy (Privacy-preserving Machine Learning (ML) and Federated Learning on the edge, user online privacy and PII leaks), etc.) and CyberSafety (modeling and detecting abusive, inappropriate or fraudulent content on social media using data mining and ML methods, and how they can be applied on the edge on user-owned or network devices). He has served in many technical program committees of top conferences and journals (WWW, KDD, CIKM, ECML- PKDD, TKDD, TKDE, TPDS, etc.)."
       - title: 'Descriptor Based Consensus for Blockchain Transactions'
         authors: 'Zachary Painter, Victor Cook, Christina Peterson, Damian Dechev'
         doi: "https://doi.org/10.1145/3465480.3466927"
