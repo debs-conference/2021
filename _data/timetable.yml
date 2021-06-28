@@ -100,6 +100,8 @@ dates:
         speaker:
           name: "Maryse Colson"
           bio: "Maryse Colson is the Mary Poppins of Euranova (Brussels, BE), taking care of people, fixing tactical communication issues, and doing her magic from time to time. She has a PhD in French Literature; her thesis was about The Genesis of the Cookbook: Discursive Study of the Culinary Publications in the Ancien Regime (Université de Liège, 2014) and she uses her literary skills for the benefit of a staff of passionate data experts and their management team."
+      - title: "Infront@DEBS2021"
+        youtube:  https://www.youtube.com/watch?v=H-pG5U9YoWs
 
   - start_slot: 13
     duration_slot: 6
