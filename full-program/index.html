@@ -378,9 +378,11 @@ div.selectTimezone{
 											{% endfor %}
 										
 										{% else %}
-										
+										<p>
 											{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b>{% endif %}
-										
+											{% if date[0].youtube != nil %}<a href = {{date[0].youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
+										  {% if date[0].speaker != nil %}<br/><b>Speaker</b>: {{date[0].speaker.name}}<br/><b>Bio</b>: {{date[0].speaker.bio}}{% endif %}
+										</p>
 										{% endif %}
 										
 										<!--<a href = https://dl.acm.org/doi/abs/10.1145/3401025.3404088 target = _blank><img style = width:5% src = /img/pdfIcon.png></a> <a href = https://www.youtube.com/watch?v=SW_WS6ULsdY&feature=youtu.be target = _blank><img style = width:6% src = /img/youtubeIcon.png></a> <a href = https://github.com/vincenzo-gulisano/debs2021_tutorial_event_time target = _blank><img style = width:5% src = /img/githubIcon.png></a>-->
