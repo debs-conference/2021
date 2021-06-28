@@ -93,11 +93,13 @@ dates:
     duration_slot: 1
     day: 1
     type: "sponsors"
-    text: "Euranova x ACM DEBS 2021 (Sponsor presentations)"
-    youtube: https://www.youtube.com/watch?v=8eLkbW-bHXA
-    speaker:
-      name: "Maryse Colson"
-      bio: "Maryse Colson is the Mary Poppins of Euranova (Brussels, BE), taking care of people, fixing tactical communication issues, and doing her magic from time to time. She has a PhD in French Literature; her thesis was about The Genesis of the Cookbook: Discursive Study of the Culinary Publications in the Ancien Regime (Université de Liège, 2014) and she uses her literary skills for the benefit of a staff of passionate data experts and their management team."
+    text: "Sponsor presentations"
+    papers:
+      - title: "Euranova x ACM DEBS 2021"
+        youtube: https://www.youtube.com/watch?v=8eLkbW-bHXA
+        speaker:
+          name: "Maryse Colson"
+          bio: "Maryse Colson is the Mary Poppins of Euranova (Brussels, BE), taking care of people, fixing tactical communication issues, and doing her magic from time to time. She has a PhD in French Literature; her thesis was about The Genesis of the Cookbook: Discursive Study of the Culinary Publications in the Ancien Regime (Université de Liège, 2014) and she uses her literary skills for the benefit of a staff of passionate data experts and their management team."
 
   - start_slot: 13
     duration_slot: 6
