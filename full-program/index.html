@@ -363,6 +363,15 @@ div.selectTimezone{
 										{% elsif date[0].type == "tutorial" and date[0].authors != nil %}
 											<p>{{ date[0].authors }}</p>
 											<p>{% if site.data.timetable.show_url and date[0].doi != nil %}<a href = {{date[0].doi}} target = _blank><img style = width:5% src = /img/pdfIcon.png></a>{% endif %}</p>
+
+											{% if date[0].parts != nil %}
+											<div>
+											{% for part in date[0].parts %}
+												<h4>{{part.title}}</h4>
+												{% if part.youtube != nil %}<a href = {{part.youtube}} target = _blank><img style = width:6% src = /img/youtubeIcon.png></a>{% endif %}
+											{% endfor %}
+											</div>
+											{% endif %}
 										
 										{% elsif date[0].papers != nil %}
 											{% for paper in date[0].papers %}
@@ -377,7 +386,6 @@ div.selectTimezone{
 												</p>
 <!--												{% if paper.abstract != nil %}<p><b>Abstract:</b> {{ paper.abstract }}{% endif %}</p> -->
 											{% endfor %}
-										
 										{% else %}
 											{% if date[0].name != nil %}<p><b>{% if date[0].text != nil %}{{date[0].text}}{% else %}{{default_text}}{% endif %}</b>{% endif %}
 										{% endif %}

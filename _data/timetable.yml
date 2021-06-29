@@ -21,6 +21,17 @@ dates:
     type: "tutorial"
     chair: "Martin Ugarte"
     doi: "https://doi.org/10.1145/3465480.3467843"
+    parts:
+      - title: "Part 1: Introduction"
+        youtube: "https://youtu.be/wbqViU3vPkQ"
+      - title: "Part 2: Idea 1"
+        youtube: "https://www.youtube.com/watch?v=3OvlknaNJIo"
+      - title: "Part 3: Idea 2"
+        youtube: "https://www.youtube.com/watch?v=W6GrRmqvLyc"
+      - title: "Part 4: Idea 3"
+        youtube: "https://www.youtube.com/watch?v=nlPNc5F2Gzw"
+      - title: "Part 5: Conclusion"
+        youtube: "https://www.youtube.com/watch?v=GIYgzn3x-Hc"
   - start_slot: 4
     duration_slot: 1
     day: 0
