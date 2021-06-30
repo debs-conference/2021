@@ -85,6 +85,11 @@ dates:
     type: "tutorial"
     doi: "https://doi.org/10.1145/3465480.3468293"
     chair: "Tilmann Rabl"
+    parts:
+      - title: "Part 1"
+        youtube: "https://youtu.be/Ue-keiTz3YI"
+      - title: "Part 2"
+        youtube: "https://youtu.be/IGv4DqEKMlM"
   - start_slot: 4
     duration_slot: 1
     day: 1
